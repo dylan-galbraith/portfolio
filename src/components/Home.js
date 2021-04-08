@@ -1,5 +1,5 @@
 import '../styles/Home.scss';
-import downIconWhite from '../assets/icons/down-arrow-white.png';
+import downIconWhite from '../assets/icons/down-arrow-white.svg';
 
 function Home({ scrollDown, autoScroll }) {
   return (

@@ -1,6 +1,6 @@
 import '../styles/Work.scss';
-import downIconWhite from '../assets/icons/down-arrow-white.png';
-import upIconWhite from '../assets/icons/up-arrow-white.png';
+import downIconWhite from '../assets/icons/down-arrow-white.svg';
+import upIconWhite from '../assets/icons/up-arrow-white.svg';
 
 function Work({ scrollUp, scrollDown }) {
   return (

@@ -1,6 +1,6 @@
 import '../styles/About.scss';
-import downIconBlack from '../assets/icons/down-arrow-black.png';
-import upIconBlack from '../assets/icons/up-arrow-black.png';
+import downIconBlack from '../assets/icons/down-arrow-black.svg';
+import upIconBlack from '../assets/icons/up-arrow-black.svg';
 import headshot from '../assets/images/headshot.jpg';
 
 function About({ scrollUp, scrollDown }) {

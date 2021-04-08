@@ -1,6 +1,5 @@
 import '../styles/Contact.scss';
-import downIconBlack from '../assets/icons/down-arrow-black.png';
-import upIconBlack from '../assets/icons/up-arrow-black.png';
+import upIconBlack from '../assets/icons/up-arrow-black.svg';
 
 function Contact({ scrollUp }) {
   return (
