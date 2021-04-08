@@ -45,16 +45,23 @@
   &__button {
     background-color: white;
     border: none;
-    width: 7rem;
+    width: 6rem;
     padding: 0.5rem;
-    letter-spacing: 1rem;
+    letter-spacing: 0.8rem;
     text-align: center;
+    margin-top: 1rem;
     &:hover {
       cursor: pointer;
     }
     &:focus {
       outline: none;
     }
+  }
+
+  &__logo {
+    height: 2rem;
+    padding: 0 2rem;
+    filter: grayscale(100%);
   }
 
   &__down {

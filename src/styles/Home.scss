@@ -3,6 +3,7 @@
   color: white;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -14,6 +15,16 @@
     letter-spacing: 2rem;
     font-size: 9vh;
     font-weight: 100;
+    padding-bottom: 3rem;
+  }
+
+  &__info {
+    width: 70%;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    line-height: 3rem;
+    letter-spacing: 0.5rem;
   }
 
   &__down {
