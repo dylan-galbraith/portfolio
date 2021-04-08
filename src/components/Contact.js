@@ -4,7 +4,7 @@ import upIconBlack from '../assets/icons/up-arrow-black.png';
 
 function Contact({ scrollUp }) {
   return (
-    <main id="contact" className="contact">
+    <div id="contact" className="contact">
       <img onClick={scrollUp} className="contact__down" src={upIconBlack} />
       <h1 className="contact__heading">CONTACT ME</h1>
       <form className="contact__form">
@@ -14,7 +14,7 @@ function Contact({ scrollUp }) {
         <textarea className="contact__input contact__message" placeholder="message *" />
         <button className="contact__button">SEND</button>
       </form>
-    </main>
+    </div>
   )
 }
 

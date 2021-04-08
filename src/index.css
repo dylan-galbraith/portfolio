@@ -12,9 +12,11 @@ code {
     monospace;
 }
 
-html {
+html, body {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 *,
