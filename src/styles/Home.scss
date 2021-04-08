@@ -1,0 +1,23 @@
+.home {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &__heading {
+    text-align: center;
+    letter-spacing: 2rem;
+    font-size: 5rem;
+    font-weight: 100;
+  }
+
+  &__down {
+    height: 4rem;
+    position: absolute;
+    bottom: 2rem;
+    opacity: 0.4;
+  }
+}
