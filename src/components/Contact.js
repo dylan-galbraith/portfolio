@@ -3,27 +3,27 @@ import upIconBlack from '../assets/icons/up-arrow-black.svg';
 import gitHubLogo from '../assets/logos/github-logo.svg';
 import gmailLogo from '../assets/logos/gmail-logo.png';
 import linkedinLogo from '../assets/logos/linkedin-logo.png';
-import axios from 'axios'
+// import axios from 'axios'
 
-const handleEmail = (e) => {
-  e.preventDefault();
-  const newEmail = {
-    fName: e.target.firstName,
-    lName: e.target.lastName,
-    emailAddress: e.target.email,
-    message: e.target.message
-  }
-  axios
-    .post(`http://localhost:8080/send`, newEmail)
-    .then(response => {
-      console.log(response);
-    })
-}
+// const handleEmail = (e) => {
+//   e.preventDefault();
+//   const newEmail = {
+//     fName: e.target.firstName,
+//     lName: e.target.lastName,
+//     emailAddress: e.target.email,
+//     message: e.target.message
+//   }
+//   axios
+//     .post(`http://localhost:8080/send`, newEmail)
+//     .then(response => {
+//       console.log(response);
+//     })
+// }
 
 function Contact({ scrollUp }) {
   return (
     <div id="contact" className="contact">
-      <img onClick={scrollUp} className="contact__down" src={upIconBlack} />
+      <img onClick={scrollUp} className="contact__down" src={upIconBlack} alt="up arrow" />
       <h1 className="contact__heading">CONTACT ME</h1>
       <form method="post" className="contact__form">
         <input name='firstName' className="contact__input" placeholder="first name *" />
@@ -33,9 +33,9 @@ function Contact({ scrollUp }) {
         <button className="contact__button">SEND</button>
       </form>
       <div className="contact__links">
-        <a href="https://github.com/dylan-galbraith"><img className="contact__logo" src={gitHubLogo} /></a>
-        <a href="mailto:dylangalbraith9@gmail.com"><img className="contact__logo" src={gmailLogo} /></a>
-        <a href="https://www.linkedin.com/in/dylan-galbraith/"><img className="contact__logo" src={linkedinLogo} /></a>
+        <a href="https://github.com/dylan-galbraith"><img className="contact__logo" src={gitHubLogo} alt="github logo" /></a>
+        <a href="mailto:dylangalbraith9@gmail.com"><img className="contact__logo" src={gmailLogo} alt="gamil logo" /></a>
+        <a href="https://www.linkedin.com/in/dylan-galbraith/"><img className="contact__logo" src={linkedinLogo} alt="contact logo" /></a>
       </div>
     </div>
   )
