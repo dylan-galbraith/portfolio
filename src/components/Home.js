@@ -1,11 +1,11 @@
 import '../styles/Home.scss';
 import downIconWhite from '../assets/icons/down-arrow-white.png';
 
-function Home() {
+function Home({ scrollDown }) {
   return (
-    <main className="home">
+    <main id="home" className="home">
       <h1 className="home__heading">DYLAN GALBRAITH</h1>
-      <img className="home__down" src={downIconWhite} />
+      <img onClick={scrollDown} className="home__down" src={downIconWhite} />
     </main>
   )
 }

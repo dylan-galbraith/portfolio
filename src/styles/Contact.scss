@@ -58,5 +58,10 @@
 
   &__down {
     height: 1.5rem;
+    opacity: 0.2;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
   }
 }

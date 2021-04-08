@@ -2,10 +2,10 @@ import '../styles/Contact.scss';
 import downIconBlack from '../assets/icons/down-arrow-black.png';
 import upIconBlack from '../assets/icons/up-arrow-black.png';
 
-function Contact() {
+function Contact({ scrollUp }) {
   return (
-    <main className="contact">
-      <img className="contact__down" src={upIconBlack} />
+    <main id="contact" className="contact">
+      <img onClick={scrollUp} className="contact__down" src={upIconBlack} />
       <h1 className="contact__heading">CONTACT ME</h1>
       <form className="contact__form">
         <input className="contact__input" placeholder="first name *" />

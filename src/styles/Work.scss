@@ -29,5 +29,10 @@
 
   &__down {
     height: 1.5rem;
+    opacity: 0.4;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
   }
 }
