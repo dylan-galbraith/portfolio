@@ -2,7 +2,7 @@
 
 .about {
   background-color: white;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +12,7 @@
   scroll-snap-align: start;
   @include desktop {
     padding: 2rem;
+    height: 100vh;
   }
 
   &__headshot {
