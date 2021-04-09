@@ -9,8 +9,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 2rem;
+  padding: 1rem;
   scroll-snap-align: center;
+  @include desktop {
+    padding: 2rem;
+  }
 
   &__heading {
     font-size: 2rem;
@@ -31,7 +34,6 @@
     @include desktop {
       width: 70%;
       font-size: 1.5rem;
-      font-weight: 200;
       line-height: 3rem;
     }
   }
