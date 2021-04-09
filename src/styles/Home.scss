@@ -1,3 +1,5 @@
+@use './partials/mixins' as *;
+
 .home {
   background-color: black;
   color: white;
@@ -11,20 +13,27 @@
   scroll-snap-align: center;
 
   &__heading {
-    text-align: center;
-    letter-spacing: 2rem;
-    font-size: 9vh;
+    font-size: 2rem;
+    letter-spacing: 1rem;
     font-weight: 100;
-    padding-bottom: 3rem;
+    padding-bottom: 3rem;  
+    text-align: center;
+    @include desktop {
+      letter-spacing: 2rem;
+      font-size: 9vh;
+    }
   }
 
   &__info {
-    width: 70%;
-    font-size: 1.5rem;
     font-weight: 200;
-    text-align: center;
-    line-height: 3rem;
     letter-spacing: 0.5rem;
+    text-align: center;
+    @include desktop {
+      width: 70%;
+      font-size: 1.5rem;
+      font-weight: 200;
+      line-height: 3rem;
+    }
   }
 
   &__down {
