@@ -1,3 +1,5 @@
+@use './partials/mixins' as *;
+
 .contact {
   background-color: white;
   height: 100vh;
@@ -5,22 +7,31 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding: 2rem;
   justify-content: space-between;
-  scroll-snap-align: center;
-
+  padding: 1rem 1rem 2rem;
+  scroll-snap-align: start;
+  @include desktop {
+    padding: 2rem;
+  }
   &__heading {
     text-align: center;
-    letter-spacing: 2rem;
-    font-size: 5rem;
-    font-weight: 100;
+    letter-spacing: 1rem;
+    font-size: 2rem;
+    font-weight: 100;  
+    @include desktop {
+      font-size: 5rem;
+      letter-spacing: 2rem;
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    width: 70%;
     align-items: center;
+    width: 100%;
+    @include desktop {
+      width: 70%;
+    }
   }
 
   &__input {
