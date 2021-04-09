@@ -2,7 +2,7 @@
 
 .contact {
   background-color: white;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,6 @@
   scroll-snap-align: start;
   @include desktop {
     padding: 2rem;
-    height: 100vh;
   }
   &__heading {
     text-align: center;
@@ -78,13 +77,16 @@
   }
 
   &__up {
-    height: 1.5rem;
-    opacity: 0.2;
-    position: absolute;
-    top: 1rem;
-    &:hover {
-      opacity: 1;
-      cursor: pointer;
+    display: none;
+    @include desktop {
+      height: 1.5rem;
+      opacity: 0.2;
+      position: absolute;
+      top: 1rem;
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }  
     }
   }
 }
