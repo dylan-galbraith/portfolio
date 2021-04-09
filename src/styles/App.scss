@@ -12,3 +12,26 @@
     scroll-snap-points-y: repeat(100vh);
   }
 }
+
+.background {
+  background-color: black;
+  height: 90vh;
+  position: relative;
+  @include desktop {
+    height: 100vh;
+  }
+
+  &--left {
+    padding: 1rem 2rem;
+    @include desktop {
+      padding: 2rem 8rem 2rem 2rem;
+    }
+  }
+
+  &--right {
+    padding: 1rem 2rem;
+    @include desktop {
+      padding: 2rem 2rem 2rem 8rem;
+    }
+  }
+}

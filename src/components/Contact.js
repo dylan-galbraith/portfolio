@@ -22,20 +22,22 @@ import linkedinLogo from '../assets/logos/linkedin-logo.png';
 
 function Contact({ scrollUp }) {
   return (
-    <div id="contact" className="contact">
-      <img onClick={scrollUp} className="contact__up" src={upIconBlack} alt="up arrow" />
-      <h1 className="contact__heading">CONTACT ME</h1>
-      <form method="post" className="contact__form">
-        <input name='firstName' className="contact__input" placeholder="first name *" />
-        <input name='lastName' className="contact__input" placeholder="last name *" />
-        <input name='email' className="contact__input" placeholder="email address *" />
-        <textarea name='message' className="contact__input contact__message" placeholder="message *" />
-        <button className="contact__button">SEND</button>
-      </form>
-      <div className="contact__links">
-        <a href="https://github.com/dylan-galbraith"><img className="contact__logo" src={gitHubLogo} alt="github logo" /></a>
-        <a href="mailto:dylangalbraith9@gmail.com"><img className="contact__logo" src={gmailLogo} alt="gamil logo" /></a>
-        <a href="https://www.linkedin.com/in/dylan-galbraith/"><img className="contact__logo" src={linkedinLogo} alt="contact logo" /></a>
+    <div className="background--left background">
+      <div id="contact" className="contact">
+        <img onClick={scrollUp} className="contact__up" src={upIconBlack} alt="up arrow" />
+        <h1 className="contact__heading">CONTACT ME</h1>
+        <form method="post" className="contact__form">
+          <input name='firstName' className="contact__input" placeholder="first name *" />
+          <input name='lastName' className="contact__input" placeholder="last name *" />
+          <input name='email' className="contact__input" placeholder="email address *" />
+          <textarea name='message' className="contact__input contact__message" placeholder="message *" />
+          <button className="contact__button">SEND</button>
+        </form>
+        <div className="contact__links">
+          <a href="https://github.com/dylan-galbraith"><img className="contact__logo" src={gitHubLogo} alt="github logo" /></a>
+          <a href="mailto:dylangalbraith9@gmail.com"><img className="contact__logo" src={gmailLogo} alt="gamil logo" /></a>
+          <a href="https://www.linkedin.com/in/dylan-galbraith/"><img className="contact__logo" src={linkedinLogo} alt="contact logo" /></a>
+        </div>
       </div>
     </div>
   )

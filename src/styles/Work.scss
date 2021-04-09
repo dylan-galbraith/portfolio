@@ -1,18 +1,17 @@
 @use './partials/mixins' as *;
 
 .work {
-  background-color: black;
+  background-color: rgb(23, 23, 23);
   color: white;
-  height: 90vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   padding: 1rem 0;
+  position: relative;
   scroll-snap-align: center;
   @include desktop {
     padding: 2rem;
-    height: 100vh;
   }
 
   &__heading {
