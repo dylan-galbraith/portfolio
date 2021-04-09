@@ -1,3 +1,5 @@
+@use './partials/mixins' as *;
+
 .App {
   overflow: scroll;
   height: 90vh;
