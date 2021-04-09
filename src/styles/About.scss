@@ -6,9 +6,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   padding: 1rem;
-  justify-content: space-between;
   scroll-snap-align: start;
   @include desktop {
     padding: 2rem;
@@ -19,6 +19,7 @@
     height: 15rem;
     width: 15rem;
     object-fit: cover;  
+    margin-bottom: 2rem;
   }
 
   &__info {
@@ -36,6 +37,22 @@
   &__down {
     height: 1.5rem;
     opacity: 0.2;
+    position: absolute;
+    bottom: 3rem;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+    @include desktop {
+      bottom: 1rem
+    }
+  }
+
+  &__up {
+    height: 1.5rem;
+    opacity: 0.2;
+    position: absolute;
+    top: 1rem;
     &:hover {
       opacity: 1;
       cursor: pointer;

@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem 1rem 2rem;
   scroll-snap-align: start;
   @include desktop {
@@ -29,6 +29,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 2rem 0;
     @include desktop {
       width: 70%;
     }
@@ -75,9 +76,11 @@
     filter: grayscale(100%);
   }
 
-  &__down {
+  &__up {
     height: 1.5rem;
     opacity: 0.2;
+    position: absolute;
+    top: 1rem;
     &:hover {
       opacity: 1;
       cursor: pointer;
