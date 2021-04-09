@@ -1,8 +1,12 @@
 .App {
   overflow: scroll;
-  height: 100vh;
+  height: 90vh;
   scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-points-y: repeat(90vh);
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  @include desktop {
+    height: 100vh;
+    scroll-snap-points-y: repeat(100vh);
+  }
 }
