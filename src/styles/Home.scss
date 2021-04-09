@@ -40,11 +40,11 @@
   position: relative;
   padding: 1rem;
   scroll-snap-align: center;
-  overflow: hidden;
-  white-space: nowrap;
   @include desktop {
     padding: 2rem;
     height: 100vh;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   &__heading {
