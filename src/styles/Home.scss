@@ -1,5 +1,34 @@
 @use './partials/mixins' as *;
 
+@keyframes heading {
+  0% {
+    font-size: 60vh;
+    opacity: 0;
+    padding-bottom: 15rem;
+  }
+  10% {
+    font-size: 45vh;
+    opacity: 0;
+    padding-bottom: 15rem;
+  }
+}
+@keyframes info {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+}
+
 .home {
   background-color: black;
   color: white;
@@ -11,12 +40,15 @@
   position: relative;
   padding: 1rem;
   scroll-snap-align: center;
+  overflow: hidden;
+  white-space: nowrap;
   @include desktop {
     padding: 2rem;
     height: 100vh;
   }
 
   &__heading {
+    animation: heading 4s;
     font-size: 2rem;
     letter-spacing: 1rem;
     font-weight: 100;
@@ -24,14 +56,16 @@
     text-align: center;
     @include desktop {
       letter-spacing: 2rem;
-      font-size: 9vh;
+      font-size: 10vh;
     }
   }
 
   &__info {
+    animation: info 3s;
     font-weight: 200;
     letter-spacing: 0.5rem;
     text-align: center;
+    color: rgb(210, 210, 210);
     @include desktop {
       width: 70%;
       font-size: 1.5rem;
@@ -41,6 +75,7 @@
 
   &__down {
     display: none;
+    animation: arrow 6s;
     @include desktop {
       display: initial;
       height: 1.5rem;
