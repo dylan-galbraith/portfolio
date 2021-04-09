@@ -10,7 +10,7 @@
   justify-content: center;
   position: relative;
   padding: 1rem;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   @include desktop {
     padding: 2rem;
   }

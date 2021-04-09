@@ -9,7 +9,7 @@
   align-items: center;
   position: relative;
   padding: 1rem 0;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   @include desktop {
     padding: 2rem;
   }
