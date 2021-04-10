@@ -6,7 +6,7 @@
   scroll-snap-points-y: repeat(90vh);
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  @include desktop {
+  @include tablet {
     height: 100vh;
     scroll-snap-points-y: repeat(100vh);
   }
@@ -16,19 +16,18 @@
   background-color: black;
   height: 90vh;
   position: relative;
+  padding: 1rem;
   @include desktop {
     height: 100vh;
   }
 
   &--left {
-    padding: 1rem 2rem;
     @include desktop {
       padding: 2rem 8rem 2rem 2rem;
     }
   }
 
   &--right {
-    padding: 1rem 2rem;
     @include desktop {
       padding: 2rem 2rem 2rem 8rem;
     }
