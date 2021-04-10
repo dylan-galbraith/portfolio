@@ -40,7 +40,7 @@
   position: relative;
   padding: 1rem;
   scroll-snap-align: center;
-  @include desktop {
+  @include tablet {
     padding: 2rem;
     height: 100vh;
     overflow: hidden;
@@ -67,16 +67,14 @@
     text-align: center;
     color: rgb(210, 210, 210);
     @include desktop {
-      width: 70%;
       font-size: 1.5rem;
-      line-height: 3rem;
     }
   }
 
   &__down {
     display: none;
     animation: arrow 6s;
-    @include desktop {
+    @include tablet {
       display: initial;
       height: 1.5rem;
       position: absolute;
