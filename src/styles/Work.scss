@@ -11,6 +11,7 @@
   position: relative;
   scroll-snap-align: center;
   overflow: hidden;
+  width: 100%;
   @include tablet {
     padding: 2rem;
     margin-left: 8vw;
@@ -135,8 +136,10 @@
   background-position: center;
   object-fit: cover;
   background-repeat: no-repeat;
+  margin-left: 10%;
   @include tablet {
     background-size: initial;
+    margin: 1rem;
   }
 }
 
@@ -149,5 +152,12 @@
   background-repeat: no-repeat;
   @include tablet {
     background-size: initial;
+  }
+}
+
+.last {
+  margin-right: 10%;
+  @include tablet {
+    margin: 1rem;
   }
 }

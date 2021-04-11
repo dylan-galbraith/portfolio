@@ -57,7 +57,7 @@ function Work({ scrollUp, scrollDown }) {
               </div>
             </div>
           </div>
-          <div className="work__box connectmd">
+          <div className="work__box connectmd last">
             <div className="work__info">
               <div className="work__info__section">
                 <h3 className="work__info__title">ConnectMD</h3>
