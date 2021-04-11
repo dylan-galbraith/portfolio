@@ -17,6 +17,7 @@ html, body {
   scroll-behavior: smooth;
   overflow: scroll;
   scroll-snap-type: y mandatory;
+  background-color: black;
 }
 
 *,
