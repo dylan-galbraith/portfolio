@@ -6,14 +6,14 @@ import headshot from '../assets/images/headshot.jpg';
 function About({ scrollUp, scrollDown }) {
   return (
     <div className="background background--left">
+      <img onClick={scrollUp} className="about__up" src={upIconBlack} alt="up arrow" />
       <div id="about" className="about">
-        <img onClick={scrollUp} className="about__up" src={upIconBlack} alt="up arrow" />
         <div className="about__bio">
           <img className="about__headshot" src={headshot} alt="headshot" />
           <p className="about__info">Hi there! My name's Dylan, and I am a full-stack web developer based in Toronto, Canada. Feel free to take a look at some of my past work, and contact me if you have any questions!</p>
         </div>
-        <img onClick={scrollDown} className="about__down" src={downIconBlack} alt="down arrow" />
       </div>
+      <img onClick={scrollDown} className="about__down" src={downIconBlack} alt="down arrow" />
     </div>
   )
 }

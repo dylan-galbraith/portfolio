@@ -22,9 +22,9 @@ import linkedinLogo from '../assets/logos/linkedin-logo.png';
 
 function Contact({ scrollUp }) {
   return (
-    <div className="background--left background">
+    <div className="background">
+      <img onClick={scrollUp} className="contact__up" src={upIconBlack} alt="up arrow" />
       <div id="contact" className="contact">
-        <img onClick={scrollUp} className="contact__up" src={upIconBlack} alt="up arrow" />
         <h1 className="contact__heading">CONTACT ME</h1>
         <form method="post" className="contact__form">
           <input name='firstName' className="contact__input" placeholder="first name *" />

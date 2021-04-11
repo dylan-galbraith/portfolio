@@ -16,20 +16,10 @@
   background-color: black;
   height: 90vh;
   position: relative;
-  padding: 1rem;
-  @include desktop {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  @include tablet {
     height: 100vh;
-  }
-
-  &--left {
-    @include desktop {
-      padding: 2rem 8rem 2rem 2rem;
-    }
-  }
-
-  &--right {
-    @include desktop {
-      padding: 2rem 2rem 2rem 8rem;
-    }
   }
 }
