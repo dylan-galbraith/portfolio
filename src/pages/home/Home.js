@@ -1,7 +1,7 @@
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Title from '../components/Title';
-import Work from '../components/Work';
+import About from './components/About';
+import Contact from './components/Contact';
+import Title from './components/Title';
+import Work from './components/Work';
 
 const scrollToTitle = (e) => {
   document.getElementById("title").scrollIntoView();

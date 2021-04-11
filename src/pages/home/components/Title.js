@@ -1,5 +1,5 @@
 import '../styles/Title.scss';
-import downIconWhite from '../assets/icons/down-arrow-white.svg';
+import downIconWhite from '../../../assets/icons/down-arrow-white.svg';
 
 function Title({ scrollDown }) {
   return (

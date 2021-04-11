@@ -1,4 +1,4 @@
-@use './partials/mixins' as *;
+@use '../../../styles/partials/mixins' as *;
 
 .work {
   background-color: rgb(23, 23, 23);
@@ -98,7 +98,7 @@
 
 .fittrack {
   background-color: #1F2833;
-  background-image: url(../assets/images/fittrack.png);
+  background-image: url(../../../assets/images/fittrack.png);
   background-size: 15rem;
   background-position: center;
   object-fit: cover;
@@ -112,7 +112,7 @@
 
 .connectmd {
   background-color: white;
-  background-image: url(../assets/images/connectmd.png);
+  background-image: url(../../../assets/images/connectmd.png);
   background-size: 15rem;
   background-position: center;
   object-fit: cover;
