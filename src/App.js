@@ -1,17 +1,32 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import './styles/App.scss';
-import Home from './pages/home/Home';
-import FitTrack from './pages/FitTrack';
+import About from './components/About';
+import Contact from './components/Contact';
+import Home from './components/Home';
+import Work from './components/Work';
+import './App.scss';
+
+const scrollToHome = (e) => {
+  document.getElementById("home").scrollIntoView();
+}
+
+const scrollToAbout = (e) => {
+  document.getElementById("about").scrollIntoView();
+}
+
+const scrollToWork = (e) => {
+  document.getElementById("work").scrollIntoView();
+}
+
+const scrollToContact = (e) => {
+  document.getElementById("contact").scrollIntoView();
+}
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/fittrack' component={FitTrack} />
-        </Switch>
-      </BrowserRouter>
+      <Home scrollDown={scrollToAbout} />
+      <About scrollUp={scrollToHome} scrollDown={scrollToWork} />
+      <Work scrollUp={scrollToAbout} scrollDown={scrollToContact} />
+      <Contact scrollUp={scrollToWork} />
     </div>
   );
 }

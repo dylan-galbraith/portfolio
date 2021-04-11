@@ -1,4 +1,4 @@
-@use './partials/mixins' as *;
+@use './styles/partials/mixins' as *;
 
 @keyframes arrow {
   0% {
@@ -67,7 +67,7 @@
     }
   }
 
-  &--title {
+  &--home {
     bottom: 0.5rem;
     height: 3.5rem;
     opacity: 0.2;
