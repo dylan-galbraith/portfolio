@@ -41,7 +41,7 @@
     z-index: 1;
     display: initial;
     padding: 1rem;
-    opacity: 0.2;
+    opacity: 0.1;
     position: absolute;
     &:hover {
       opacity: 1;
@@ -57,6 +57,7 @@
       transition-duration: 1s;
     }
   }
+
   &--down {
     bottom: 2rem;
     height: 3.5rem;
@@ -64,5 +65,15 @@
       bottom: 1.5rem;
       transition-duration: 1s;
     }
+  }
+
+  &--title {
+    bottom: 0.5rem;
+    height: 3.5rem;
+    opacity: 0.2;
+    &:hover {
+      bottom: 0rem;
+      transition-duration: 1s;
+    }  
   }
 }
