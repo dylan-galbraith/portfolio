@@ -16,10 +16,11 @@
   background-color: black;
   height: 90vh;
   position: relative;
-  padding: 2rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: center;
   @include tablet {
     height: 100vh;
+    padding: 2rem;
   }
 }
