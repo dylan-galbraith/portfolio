@@ -6,7 +6,7 @@ function Home({ scrollDown, autoScroll }) {
     <div id="home" className="home">
       <h1 className="home__heading">DYLAN GALBRAITH</h1>
       <p className="home__info">full-stack web developer</p>
-      <img onClick={scrollDown} className="home__down" src={downIconWhite} alt="down arrow"/>
+      <img onClick={scrollDown} className="arrow arrow--down" src={downIconWhite} alt="down arrow"/>
     </div>
   )
 }

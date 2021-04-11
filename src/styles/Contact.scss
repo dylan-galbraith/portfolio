@@ -81,21 +81,4 @@
     padding: 0 2rem;
     filter: grayscale(100%);
   }
-
-  &__up {
-    display: none;
-    @include tablet {
-      display: initial;
-      z-index: 1;
-      height: 3.5rem;
-      padding: 1rem;
-      opacity: 0.2;
-      position: absolute;
-      top: 2rem;
-      &:hover {
-        opacity: 1;
-        cursor: pointer;
-      }
-    }
-  }
 }

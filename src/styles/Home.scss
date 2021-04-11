@@ -20,14 +20,6 @@
     opacity: 0;
   }
 }
-@keyframes arrow {
-  0% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-}
 
 .home {
   background-color: black;
@@ -68,22 +60,6 @@
     color: rgb(210, 210, 210);
     @include desktop {
       font-size: 1.5rem;
-    }
-  }
-
-  &__down {
-    display: none;
-    animation: arrow 6s;
-    @include tablet {
-      display: initial;
-      height: 1.5rem;
-      position: absolute;
-      bottom: 2rem;
-      opacity: 0.4;
-      &:hover {
-        opacity: 1;
-        cursor: pointer;
-      }  
     }
   }
 }

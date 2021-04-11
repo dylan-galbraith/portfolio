@@ -1,5 +1,14 @@
 @use './partials/mixins' as *;
 
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+}
+
 .App {
   overflow: scroll;
   height: 90vh;
@@ -16,11 +25,44 @@
   background-color: black;
   height: 90vh;
   position: relative;
-  padding: 0 1rem;
+  padding: 3rem 1rem;
   display: flex;
   justify-content: center;
   @include tablet {
     height: 100vh;
-    padding: 2rem;
+    padding: 2rem 0;
+  }
+}
+
+.arrow {
+  display: none;
+  @include tablet {
+    animation: arrow 6s;
+    z-index: 1;
+    display: initial;
+    padding: 1rem;
+    opacity: 0.2;
+    position: absolute;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+
+  &--up {
+    top: 2rem;
+    height: 3.5rem;
+    &:hover {
+      top: 1.5rem;
+      transition-duration: 1s;
+    }
+  }
+  &--down {
+    bottom: 2rem;
+    height: 3.5rem;
+    &:hover {
+      bottom: 1.5rem;
+      transition-duration: 1s;
+    }
   }
 }

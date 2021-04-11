@@ -5,7 +5,7 @@ import upIconWhite from '../assets/icons/up-arrow-white.svg';
 function Work({ scrollUp, scrollDown }) {
   return (
     <div className="background">
-      <img onClick={scrollUp} className="work__up" src={upIconWhite} alt="up arrow" />
+      <img onClick={scrollUp} className="arrow arrow--up" src={upIconWhite} alt="up arrow" />
       <div id="work" className="work">
         <h1 className="work__heading">MY WORK</h1>
         <div className="work__display">
@@ -75,7 +75,7 @@ function Work({ scrollUp, scrollDown }) {
           </div>
         </div>
       </div>
-      <img onClick={scrollDown} className="work__down" src={downIconWhite} alt="down arrow" />
+      <img onClick={scrollDown} className="arrow arrow--down" src={downIconWhite} alt="down arrow" />
     </div>
   )
 }
