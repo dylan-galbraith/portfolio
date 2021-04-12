@@ -1,6 +1,7 @@
 import '../styles/Work.scss';
 import downIconWhite from '../assets/icons/down-arrow-white.svg';
 import upIconWhite from '../assets/icons/up-arrow-white.svg';
+import closeIcon from '../assets/icons/close-icon.svg';
 import { Component } from 'react';
 
 class Work extends Component {
@@ -16,16 +17,24 @@ class Work extends Component {
     })
   }
 
+  closeWork = () => {
+    this.setState({
+      workSelected: null
+    })
+  }
+
   render() {
     if (this.state.workSelected) {
       return (
         <div className="background">
-          <img onClick={this.props.scrollUp} className="arrow arrow--up" src={upIconWhite} alt="up arrow" />
           <div id="work" className="work">
+            <img onClick={this.closeWork} className="work__close" src={closeIcon} alt="close icon" />
             <h1 className="work__heading">FitTrack</h1>
-            <p className="work__info__text">Your go-to workout tracking app. Build exercises and routines, and track your progress at the gym, all in the palm of your hand!</p>
+            <p className="work__stack">REACT | SASS | JAVASCRIPT | MYSQL | PRISMA | EXPRESS | NODE.JS</p>
+            <p className="work__bio">I developed this project while in school as my final assignment. Given 10 days, we had to come up with an idea for a web application that would solve some type of issue. I built FitTrack, a mobile application that allows you to create your own exercises and routines, and track your progress at the gym.</p>
+            <p className="work__bio">To build this application, I used React and SASS for my end. For the back-end, I used MySQL and Prisma to build the database, along with Express and Node.js for the server.</p>
+            <a href="https://fit-track-capstone.herokuapp.com/" className="work__bio work__bio--link">https://fit-track-capstone.herokuapp.com/</a>
           </div>
-          <img onClick={this.props.scrollDown} className="arrow arrow--down" src={downIconWhite} alt="down arrow" />
         </div>
       )
     }

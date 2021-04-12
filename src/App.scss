@@ -37,7 +37,6 @@
 .arrow {
   display: none;
   @include tablet {
-    animation: arrow 6s;
     z-index: 1;
     display: initial;
     padding: 1rem;
@@ -68,6 +67,7 @@
   }
 
   &--home {
+    animation: arrow 6s;
     bottom: 0.5rem;
     height: 3.5rem;
     opacity: 0.2;
