@@ -49,8 +49,10 @@
     width: fit-content;
     font-weight: 200;
     padding-top: 4rem;
-    &:hover {
-      transform: scale(1.1);
+    @include desktop {
+      &:hover {
+        transform: scale(1.1);
+      }  
     }
   }
 
