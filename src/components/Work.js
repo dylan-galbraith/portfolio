@@ -28,12 +28,12 @@ class Work extends Component {
       return (
         <div className="background">
           <div id="work" className="work">
-            <img onClick={this.closeWork} className="work__close" src={closeIcon} alt="close icon" />
-            <h1 className="work__heading">FitTrack</h1>
-            <p className="work__stack">REACT | SASS | JAVASCRIPT | MYSQL | PRISMA | EXPRESS | NODE.JS</p>
-            <p className="work__bio">I developed this project while in school as my final assignment. Given 10 days, we had to come up with an idea for a web application that would solve some type of issue. I built FitTrack, a mobile application that allows you to create your own exercises and routines, and track your progress at the gym.</p>
-            <p className="work__bio">To build this application, I used React and SASS for my end. For the back-end, I used MySQL and Prisma to build the database, along with Express and Node.js for the server.</p>
-            <a href="https://fit-track-capstone.herokuapp.com/" className="work__bio work__bio--link">https://fit-track-capstone.herokuapp.com/</a>
+            <img onClick={this.closeWork} className="bio__close" src={closeIcon} alt="close icon" />
+            <h1 className="bio__heading">FitTrack</h1>
+            <p className="bio__stack">REACT | SASS | JAVASCRIPT | MYSQL | PRISMA | EXPRESS | NODE.JS</p>
+            <p className="bio__text">I developed this project while in school as my final assignment. Given 10 days, we had to come up with an idea for a web application that would solve some type of issue. I built FitTrack, a mobile application that allows you to create your own exercises and routines, and track your progress at the gym.</p>
+            <p className="bio__text">To build this application, I used React and SASS for my end. For the back-end, I used MySQL and Prisma to build the database, along with Express and Node.js for the server.</p>
+            <a href="https://fit-track-capstone.herokuapp.com/" className="bio__text bio__text--link">https://fit-track-capstone.herokuapp.com/</a>
           </div>
         </div>
       )
