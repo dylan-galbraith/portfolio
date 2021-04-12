@@ -30,27 +30,31 @@
   }
 
   &__display {
-    justify-content: center;
+    display: flex;
     align-items: center;
+    flex-direction: column;
     width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scroll-snap-type: x mandatory;
-    scroll-snap-points-x: repeat(31rem);
-    padding-top: 5rem;
+    height: 100%;
+    // overflow-x: scroll;
+    // overflow-y: hidden;
+    // white-space: nowrap;
+    // scroll-snap-type: x mandatory;
+    // scroll-snap-points-x: repeat(31rem);
     @include tablet {
       padding-top: 3rem;
+      flex-direction: row;
+      justify-content: center;
     }
   }
 
   &__box {
-    height: 20rem;
-    width: 80%;
+    height: 10rem;
+    width: 80vw;
     position: relative;
     margin: 0.5rem;
     display: inline-block;
     scroll-snap-align: center;
+    margin-top: 2rem;
     @include tablet {
       height: 20rem;
       width: 30rem;  
@@ -185,11 +189,10 @@
 .fittrack {
   background-color: #1F2833;
   background-image: url(../assets/images/fittrack.png);
-  background-size: 15rem;
+  background-size: 40vw;
   background-position: center;
   object-fit: cover;
   background-repeat: no-repeat;
-  margin-left: 10%;
   @include tablet {
     background-size: initial;
     margin: 1rem;
