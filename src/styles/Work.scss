@@ -38,11 +38,14 @@
     white-space: nowrap;
     scroll-snap-type: x mandatory;
     scroll-snap-points-x: repeat(31rem);
-    padding-top: 3rem;
+    padding-top: 5rem;
+    @include tablet {
+      padding-top: 3rem;
+    }
   }
 
   &__box {
-    height: 10rem;
+    height: 20rem;
     width: 80%;
     position: relative;
     margin: 0.5rem;
