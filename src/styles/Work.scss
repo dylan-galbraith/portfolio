@@ -145,10 +145,11 @@
     font-weight: 200;
     padding-top: 2rem;
     text-align: center;
-    line-height: 2rem;
+    line-height: 1.5rem;
     @include tablet {
       font-size: 1.2rem;
       width: 80%;
+      line-height: 2rem;
     }
 
     &--link {
