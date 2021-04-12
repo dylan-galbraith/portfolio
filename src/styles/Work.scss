@@ -156,8 +156,7 @@
     }
 
     &--link {
-      padding: 0.5rem 1rem;
-      margin-top: 2rem;
+      padding: 0;
       text-decoration: none;
       color: white;
       width: fit-content;
@@ -166,6 +165,19 @@
         font-weight: 200;
       }
     }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    @include tablet {
+      padding-top: 2rem;
+    }
+  }
+
+  &__logo {
+    height: 0.9rem;
   }
 }
 
