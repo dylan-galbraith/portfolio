@@ -9,7 +9,7 @@ const scrollToHome = (e) => {
 }
 
 const scrollToAbout = (e) => {
-  document.getElementById("about").scrollIntoView();
+  document.getElementById("about").scrollIntoView({block: "center"});
 }
 
 const scrollToWork = (e) => {

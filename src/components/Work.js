@@ -34,7 +34,7 @@ class Work extends Component {
             <p className="bio__text">I developed this project while in school as my final assignment. Given 10 days, we had to come up with an idea for a web application that would solve some type of issue. I built FitTrack, a mobile application that allows you to create your own exercises and routines, and track your progress at the gym.</p>
             <p className="bio__text">To build this application, I used React and SASS for my front-end. For the back-end, I used MySQL and Prisma to build the database, along with Express and Node.js for the server.</p>
             <div className="bio__links">
-              <a href="https://fit-track-capstone.herokuapp.com/" className="bio__text bio__text--link">https://fit-track-capstone.herokuapp.com/</a>
+              <a href="https://fit-track.netlify.app/" className="bio__text bio__text--link">https://fit-track.netlify.app/</a>
               <a href="https://github.com/dylan-galbraith/fit-track" className="bio__text bio__text--link"><img className="bio__logo" src={githubLogo} alt="github logo" /> https://github.com/dylan-galbraith/fit-track</a>
             </div>
           </div>
@@ -59,7 +59,7 @@ class Work extends Component {
     }
     return (
       <div className="background">
-        <img onClick={this.props.scrollUp} className="arrow arrow--up" src={upIconWhite} alt="up arrow" />
+        {/* <img onClick={this.props.scrollUp} className="arrow arrow--up" src={upIconWhite} alt="up arrow" /> */}
         <div id="work" className="work">
           <h1 className="work__heading">MY WORK</h1>
           <div className="work__display">
@@ -97,7 +97,7 @@ class Work extends Component {
             </div>            
           </div>
         </div>
-        <img onClick={this.props.scrollDown} className="arrow arrow--down" src={downIconWhite} alt="down arrow" />
+        {/* <img onClick={this.props.scrollDown} className="arrow arrow--down" src={downIconWhite} alt="down arrow" /> */}
       </div>
     )  
   }

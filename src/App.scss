@@ -12,12 +12,12 @@
 .App {
   overflow: scroll;
   height: 90vh;
-  scroll-snap-points-y: repeat(90vh);
-  scroll-snap-type: y mandatory;
+  // scroll-snap-points-y: repeat(90vh);
+  // scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   @include tablet {
     height: 100vh;
-    scroll-snap-points-y: repeat(100vh);
+    // scroll-snap-points-y: repeat(100vh);
   }
 }
 

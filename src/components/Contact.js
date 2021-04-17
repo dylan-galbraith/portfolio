@@ -7,7 +7,7 @@ import linkedinLogo from '../assets/logos/linkedin-logo.png';
 function Contact({ scrollUp }) {
   return (
     <div className="background">
-      <img onClick={scrollUp} className="arrow arrow--up" src={upIconBlack} alt="up arrow" />
+      {/* <img onClick={scrollUp} className="arrow arrow--up" src={upIconBlack} alt="up arrow" /> */}
       <div id="contact" className="contact">
         <h1 className="contact__heading">CONTACT ME</h1>
         <div className="contact__links">
