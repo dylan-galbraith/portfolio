@@ -40,13 +40,17 @@
 }
 
 .arrow {
-  z-index: 1;
-  display: initial;
-  padding: 1rem;
-  position: absolute;
-  &:hover {
-    opacity: 1;
-    cursor: pointer;
+  display: none;
+  @include tablet {
+    display: initial;
+    z-index: 1;
+    display: initial;
+    padding: 1rem;
+    position: absolute;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
   }
 
   &--home {
