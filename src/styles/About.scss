@@ -1,14 +1,12 @@
 @use './partials/mixins' as *;
 
 .about {
-  // background-color: rgb(23, 23, 23, 0.3);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding: 1rem;
-  // scroll-snap-align: center;
   color: black;
 
   &__bio {
