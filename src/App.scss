@@ -13,8 +13,9 @@
   overflow: scroll;
   height: 90vh;
   background-image: url(./assets/images/background.jpg);
-  object-fit: cover;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-size: auto 100%;
   background-position: center;
 
   // scroll-snap-points-y: repeat(90vh);
@@ -40,16 +41,13 @@
 }
 
 .arrow {
-  display: none;
-  @include tablet {
-    z-index: 1;
-    display: initial;
-    padding: 1rem;
-    position: absolute;
-    &:hover {
-      opacity: 1;
-      cursor: pointer;
-    }
+  z-index: 1;
+  display: initial;
+  padding: 1rem;
+  position: absolute;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
   }
 
   &--home {

@@ -24,7 +24,7 @@ function Work() {
         </div>
         <div className={fitTrack ? "work__bio" : "hidden"} >
           <p className="work__item__info work__item__info--right">I developed this project while in school as my final assignment. Given 10 days, we had to come up with an idea for a web application that would solve some type of issue. I built FitTrack, a mobile application that allows you to create your own exercises and routines, and track your progress at the gym.</p>
-          <p className="work__item__info work__item__info--right">To build this application, I used React and SASS for my front-end. For the back-end, I used MySQL and Prisma to build the database, along with Express and Node.js for the server.</p>
+          <p className="work__item__info work__item__info--right">To build this application, I used React and JavaScript, as well as CSS/SASS for my front-end. To set up authentication and authorization, I used Firebase. For the back-end, I used MySQL and Prisma to build the database, along with Express and Node.js for the server.</p>
           <div className="work__item__links">
             <a href="https://fit-track.netlify.app/" className="work__item__link work__item__link--right">https://fit-track.netlify.app/</a>
             <a href="https://github.com/dylan-galbraith/fit-track" className="work__item__link work__item__link--right">https://github.com/dylan-galbraith/fit-track</a>
