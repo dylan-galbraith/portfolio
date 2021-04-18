@@ -4,6 +4,7 @@ import upIconWhite from '../assets/icons/up-arrow-white.svg';
 import closeIcon from '../assets/icons/close-icon.svg';
 import githubLogo from '../assets/logos/github-logo.svg';
 import { Component } from 'react';
+import fitTrack from '../assets/images/fittrack.png';
 
 class Work extends Component {
 
@@ -26,7 +27,6 @@ class Work extends Component {
   render() {
     if (this.state.workSelected === "fittrack") {
       return (
-        <div className="background">
           <div id="work" className="work">
             <img onClick={this.closeWork} className="bio__close" src={closeIcon} alt="close icon" />
             <h1 className="bio__heading">FitTrack</h1>
@@ -38,12 +38,10 @@ class Work extends Component {
               <a href="https://github.com/dylan-galbraith/fit-track" className="bio__text bio__text--link"><img className="bio__logo" src={githubLogo} alt="github logo" /> https://github.com/dylan-galbraith/fit-track</a>
             </div>
           </div>
-        </div>
       )
     }
     if (this.state.workSelected === "connectmd") {
       return (
-        <div className="background">
           <div id="work" className="work">
             <img onClick={this.closeWork} className="bio__close" src={closeIcon} alt="close icon" />
             <h1 className="bio__heading">ConnectMD</h1>
@@ -54,16 +52,24 @@ class Work extends Component {
               <a href="https://github.com/dylan-galbraith/tinder-md" className="bio__text bio__text--link"><img className="bio__logo" src={githubLogo} alt="github logo" /> https://github.com/dylan-galbraith/tinder-md</a>
             </div>
           </div>
-        </div>
       )
     }
     return (
-      <div className="background">
-        {/* <img onClick={this.props.scrollUp} className="arrow arrow--up" src={upIconWhite} alt="up arrow" /> */}
         <div id="work" className="work">
-          <h1 className="work__heading">MY WORK</h1>
-          <div className="work__display">
-            <div onClick={this.selectedWork} id="fittrack" className="work__box fittrack">
+          <div className="work__item">
+            <p className="work__item__heading">FitTrack</p>
+            <p className="work__item__info">REACT | SASS | JAVASCRIPT | FIREBASE | MYSQL | PRISMA | EXPRESS | NODE.JS</p>
+            <p className="work__item__more">Learn More &#8594;</p>
+          </div>
+          <div className="work__item work__item--right">
+            <p className="work__item__heading">ConnectMD</p>
+            <p className="work__item__info">REACT | SASS | JAVASCRIPT | EXPRESS | NODE.JS</p>
+            <p className="work__item__more">Learn More &#8594;</p>
+          </div>
+          {/* <h1 className="work__heading">MY WORK</h1> */}
+          {/* <div className="work__display"> */}
+            {/* <div onClick={this.selectedWork} className="work__box" id="fittrack">
+              <img src={fitTrack} alt="FitTrack logo" className="work__image" />
               <div className="work__info">
                 <div className="work__info__section">
                   <h3 className="work__info__title">FitTrack</h3>
@@ -78,8 +84,8 @@ class Work extends Component {
                 <p className="work__info__text">MySQL, Prisma, Express, Node.js</p>
                 </div>
               </div>
-            </div>
-            <div onClick={this.selectedWork} className="work__box connectmd" id="connectmd">
+            </div> */}
+            {/* <div onClick={this.selectedWork} className="work__box connectmd" id="connectmd">
               <div className="work__info">
                 <div className="work__info__section">
                   <h3 className="work__info__title">ConnectMD</h3>
@@ -94,11 +100,9 @@ class Work extends Component {
                 <p className="work__info__text">Express, Node.js</p>
                 </div>
               </div>
-            </div>            
-          </div>
+            </div>             */}
+          {/* </div> */}
         </div>
-        {/* <img onClick={this.props.scrollDown} className="arrow arrow--down" src={downIconWhite} alt="down arrow" /> */}
-      </div>
     )  
   }
 }

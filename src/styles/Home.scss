@@ -22,8 +22,6 @@
 }
 
 .home {
-  background-color: black;
-  color: white;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -57,7 +55,7 @@
     font-weight: 200;
     letter-spacing: 0.5rem;
     text-align: center;
-    color: rgb(210, 210, 210);
+    color: black;
     @include desktop {
       font-size: 1.5rem;
     }

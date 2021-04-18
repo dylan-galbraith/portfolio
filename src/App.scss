@@ -12,6 +12,11 @@
 .App {
   overflow: scroll;
   height: 90vh;
+  background-image: url(./assets/images/background.jpg);
+  object-fit: cover;
+  background-size: 100%;
+  background-position: center;
+
   // scroll-snap-points-y: repeat(90vh);
   // scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -40,7 +45,6 @@
     z-index: 1;
     display: initial;
     padding: 1rem;
-    opacity: 0.1;
     position: absolute;
     &:hover {
       opacity: 1;
@@ -48,29 +52,11 @@
     }
   }
 
-  &--up {
-    top: 2rem;
-    height: 3.5rem;
-    &:hover {
-      top: 1.5rem;
-      transition-duration: 1s;
-    }
-  }
-
-  &--down {
-    bottom: 2rem;
-    height: 3.5rem;
-    &:hover {
-      bottom: 1.5rem;
-      transition-duration: 1s;
-    }
-  }
-
   &--home {
     animation: arrow 6s;
     bottom: 0.5rem;
     height: 3.5rem;
-    opacity: 0.2;
+    opacity: 0.8;
     &:hover {
       bottom: 0rem;
       transition-duration: 1s;

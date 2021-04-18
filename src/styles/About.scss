@@ -1,18 +1,15 @@
 @use './partials/mixins' as *;
 
 .about {
-  background-color: rgb(23, 23, 23);
+  // background-color: rgb(23, 23, 23, 0.3);
   height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding: 1rem;
-  scroll-snap-align: center;
-  color: white;
-  @include tablet {
-    margin: 3rem 12vw 3rem 0;
-  }
+  // scroll-snap-align: center;
+  color: black;
 
   &__bio {
     display: flex;
