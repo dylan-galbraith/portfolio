@@ -11,7 +11,7 @@
 
 .App {
   overflow: scroll;
-  height: 90vh;
+  height: 100vh;
   background-image: url(./assets/images/background.jpg);
   background-repeat: no-repeat;
   object-fit: fill;
@@ -21,9 +21,8 @@
   // scroll-snap-points-y: repeat(90vh);
   // scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  @include tablet {
-    height: 100vh;
-    // scroll-snap-points-y: repeat(100vh);
+  @include desktop {
+    background-size: 100%;
   }
 }
 
@@ -52,7 +51,7 @@
 
   &--home {
     animation: arrow 6s;
-    bottom: 0.5rem;
+    bottom: 1.5rem;
     height: 3.5rem;
     opacity: 0.8;
     &:hover {

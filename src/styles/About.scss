@@ -1,13 +1,17 @@
 @use './partials/mixins' as *;
 
 .about {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 1rem;
-  color: black;
+  color: white;
+  margin: 15rem 0;
+  @include tablet {
+    height: 100vh;
+    color: black;
+    padding: 1rem;
+  }
 
   &__bio {
     display: flex;
@@ -20,13 +24,15 @@
   }
 
   &__headshot {
-    border-radius: 50%;
-    height: 15rem;
-    min-width: 15rem;
+    height: 100vw;
+    width: 100vw;
     object-fit: cover;
-    margin-bottom: 2rem;
     @include tablet {
-      margin-right: 2rem; 
+      margin-right: 2rem;
+      min-width: 15rem;
+      max-width: 15rem;
+      border-radius: 50%;
+      height: 15rem;
     }
   }
 
@@ -35,9 +41,12 @@
     line-height: 2rem;  
     text-align: center;
     font-size: 1.2rem;
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 1rem;
     @include tablet {
       width: 70%;
-      line-height: 3rem;  
+      line-height: 3rem;
+      background-color:rgb(0, 0, 0, 0);
     }
     @include desktop {
       font-size: 1.5rem;
