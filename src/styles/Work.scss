@@ -4,18 +4,21 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
+  margin-top: 12rem;
+  @include tablet {
+    margin-top: 18rem;
+  }
 
   &__item {
     width: 95vw;
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 0, 0, 0.4);
-    margin-top: 12rem;
-    padding: 2rem;
+    margin-top: 5rem;
     padding: 1rem;
     color: white;
     @include tablet {
-      margin-top: 18rem;
+      margin-top: 8rem;
       padding: 2rem;
       padding-left: 8rem;
       width: 75vw;
@@ -64,7 +67,7 @@
       font-size: 0.8rem;
       font-weight: 300;
       align-self: flex-start;
-      padding: 1rem 0;
+      padding-bottom: 2rem;
       letter-spacing: 0.1rem;
       line-height: 1.3rem;
       @include tablet {
@@ -99,10 +102,6 @@
       }
     }
 
-    &__links {
-      padding: 1rem 0;
-    }
-
     &__link {
       font-size: 1rem;
       font-weight: 300;
@@ -121,10 +120,35 @@
         }
       }
 
-
       &--right {
         text-align: right;
         align-self: flex-end;  
+      }
+    }
+  }
+
+  &__bio {
+    overflow: hidden;
+    transition: all 1s ease;
+    transform: scaleY(0);
+    transform-origin: top;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 1rem;
+    color: white;
+    max-height: 0;
+    @include tablet {
+      padding: 0 2rem 2rem 8rem;
+      width: 75vw;
+    }
+
+    &--right {
+      align-self: flex-end;
+      @include tablet {
+        padding-left: 2rem;
+        padding-right: 8rem;  
       }
     }
   }
@@ -133,6 +157,19 @@
   // white-space: nowrap;
   // scroll-snap-type: x mandatory;
   // scroll-snap-points-x: repeat(31rem);
+}
+
+.active {
+  transform: scaleY(1);
+  max-height: 50rem;
+}
+
+.transform {
+  -webkit-transition: all 2s ease;  
+  -moz-transition: all 2s ease;  
+  -o-transition: all 2s ease;  
+  -ms-transition: all 2s ease;  
+  transition: all 2s ease;
 }
 
 .hidden {
