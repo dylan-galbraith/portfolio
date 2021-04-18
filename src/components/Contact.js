@@ -1,10 +1,9 @@
 import '../styles/Contact.scss';
-import upIconBlack from '../assets/icons/up-arrow-white.svg';
 import gitHubLogo from '../assets/logos/github-logo.svg';
 import gmailLogo from '../assets/logos/gmail-logo.png';
 import linkedinLogo from '../assets/logos/linkedin-logo.png';
 
-function Contact({ scrollUp }) {
+function Contact() {
   return (
       <div id="contact" className="contact">
         <div className="contact__links">

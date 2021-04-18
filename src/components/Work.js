@@ -1,10 +1,7 @@
 import '../styles/Work.scss';
-import downIconWhite from '../assets/icons/down-arrow-white.svg';
-import upIconWhite from '../assets/icons/up-arrow-white.svg';
 import closeIcon from '../assets/icons/close-icon.svg';
 import githubLogo from '../assets/logos/github-logo.svg';
 import { Component } from 'react';
-import fitTrack from '../assets/images/fittrack.png';
 
 class Work extends Component {
 
@@ -55,54 +52,18 @@ class Work extends Component {
       )
     }
     return (
-        <div id="work" className="work">
-          <div className="work__item">
-            <p className="work__item__heading">FitTrack</p>
-            <p className="work__item__info">REACT | SASS | JAVASCRIPT | FIREBASE | MYSQL | PRISMA | EXPRESS | NODE.JS</p>
-            <p className="work__item__more">Learn More &#8594;</p>
-          </div>
-          <div className="work__item work__item--right">
-            <p className="work__item__heading">ConnectMD</p>
-            <p className="work__item__info">REACT | SASS | JAVASCRIPT | EXPRESS | NODE.JS</p>
-            <p className="work__item__more">Learn More &#8594;</p>
-          </div>
-          {/* <h1 className="work__heading">MY WORK</h1> */}
-          {/* <div className="work__display"> */}
-            {/* <div onClick={this.selectedWork} className="work__box" id="fittrack">
-              <img src={fitTrack} alt="FitTrack logo" className="work__image" />
-              <div className="work__info">
-                <div className="work__info__section">
-                  <h3 className="work__info__title">FitTrack</h3>
-                  <p className="work__info__text work__info__text--bold">Creator/Lead Developer</p>
-                </div>
-                <div className="work__info__section">
-                <p className="work__info__text work__info__text--bold">Front-End</p>
-                <p className="work__info__text">HTML5, CSS, JavaScript, SASS, React</p>
-                </div>
-                <div className="work__info__section">
-                <p className="work__info__text work__info__text--bold">Back-End</p>
-                <p className="work__info__text">MySQL, Prisma, Express, Node.js</p>
-                </div>
-              </div>
-            </div> */}
-            {/* <div onClick={this.selectedWork} className="work__box connectmd" id="connectmd">
-              <div className="work__info">
-                <div className="work__info__section">
-                  <h3 className="work__info__title">ConnectMD</h3>
-                  <p className="work__info__text work__info__text--bold">Co-Creator/Developer</p>
-                </div>
-                <div className="work__info__section">
-                <p className="work__info__text work__info__text--bold">Front-End</p>
-                <p className="work__info__text">HTML5, CSS, JavaScript, SASS, React</p>
-                </div>
-                <div className="work__info__section">
-                <p className="work__info__text work__info__text--bold">Back-End</p>
-                <p className="work__info__text">Express, Node.js</p>
-                </div>
-              </div>
-            </div>             */}
-          {/* </div> */}
+      <div id="work" className="work">
+        <div className="work__item">
+          <p className="work__item__heading">FitTrack</p>
+          <p className="work__item__info">REACT | SASS | JAVASCRIPT | FIREBASE | MYSQL | PRISMA | EXPRESS | NODE.JS</p>
+          <p className="work__item__more">Learn More &#8594;</p>
         </div>
+        <div className="work__item work__item--right">
+          <p className="work__item__heading work__item__heading--right">ConnectMD</p>
+          <p className="work__item__info work__item__info--left">REACT | SASS | JAVASCRIPT | EXPRESS | NODE.JS</p>
+          <p className="work__item__more work__item__more--left">Learn More &#8594;</p>
+        </div>
+      </div>
     )  
   }
 }

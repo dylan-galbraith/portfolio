@@ -1,9 +1,7 @@
 import '../styles/About.scss';
-import downIconBlack from '../assets/icons/down-arrow-white.svg';
-import upIconBlack from '../assets/icons/up-arrow-white.svg';
 import headshot from '../assets/images/headshot.jpg';
 
-function About({ scrollUp, scrollDown }) {
+function About() {
   return (
       <div id="about" className="about">
         <div className="about__bio">
