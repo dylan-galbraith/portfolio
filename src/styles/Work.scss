@@ -9,26 +9,38 @@
   }
 
   &__item {
-    width: 75vw;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 0, 0, 0.4);
-    margin-bottom: 18rem;
+    margin-bottom: 12rem;
     padding: 2rem;
-    padding-left: 8rem;
+    padding: 1rem;
     color: white;
+    @include tablet {
+      margin-bottom: 18rem;
+      padding: 2rem;
+      padding-left: 8rem;
+      width: 75vw;
+      margin-bottom: 18rem;
+    }
 
     &--right {
       align-self: flex-end;
-      padding-left: 2rem;
-      padding-right: 8rem;
+      @include tablet {
+        padding-left: 2rem;
+        padding-right: 8rem;  
+      }
     }
 
     &__heading {
-      font-size: 5rem;
+      font-size: 3rem;
       font-weight: 100;
       font-style: italic;
       opacity: 0.7;
+      @include tablet {
+        font-size: 5rem;
+      }
 
       &--right {
         text-align: right;
@@ -36,11 +48,15 @@
     }
 
     &__tech {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
       font-weight: 800;
-      padding: 1rem;
+      padding: 1rem 0;
       letter-spacing: 0.3rem;
-      line-height: 2rem;
+      line-height: 1.3rem;
+      @include tablet {
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
 
       &--right {
         text-align: right;
@@ -49,12 +65,17 @@
     }
 
     &__info {
-      font-size: 1.2rem;
-      font-weight: 200;
+      font-size: 0.8rem;
+      font-weight: 300;
       align-self: flex-start;
-      padding: 1rem;
-      letter-spacing: 0.2rem;
-      line-height: 2rem;
+      padding: 1rem 0;
+      letter-spacing: 0.1rem;
+      line-height: 1.3rem;
+      @include tablet {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        letter-spacing: 0.2rem;
+      }
 
       &--right {
         text-align: right;
@@ -63,14 +84,17 @@
     }
 
     &__more {
-      padding: 1rem;
+      padding: 0.5rem 0;
       font-size: 1.2rem;
       font-weight: 200;
       line-height: 1.5rem;
       letter-spacing: 0.1rem;
-      &:hover {
-        font-weight: 300;
-        cursor: pointer;
+      @include tablet {
+        padding: 1rem;
+        &:hover {
+          font-weight: 300;
+          cursor: pointer;
+        }
       }
 
       &--right {
@@ -80,20 +104,27 @@
     }
 
     &__links {
-      padding: 1rem;
+      padding: 1rem 0;
     }
 
     &__link {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
       font-weight: 300;
-      line-height: 1.8rem;
-      letter-spacing: 0.2rem;
+      line-height: 2rem;
+      letter-spacing: 0rem;
       color: white;      
       display: block;
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
+      text-decoration: underline;
+      @include tablet {
+        text-decoration: none;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.1rem;
+        &:hover {
+          text-decoration: underline;
+        }
       }
+
 
       &--right {
         text-align: right;
