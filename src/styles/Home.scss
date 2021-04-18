@@ -22,7 +22,7 @@
 }
 
 .home {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,6 @@
   scroll-snap-align: center;
   @include tablet {
     padding: 2rem;
-    height: 100vh;
     overflow: hidden;
     white-space: nowrap;
   }
