@@ -1,24 +1,26 @@
 .nav {
   position: fixed;
   z-index: 1;
-  top: 0;
+  bottom: 0;
+  right: 0;
   padding: 2rem;
-  width: 100vw;
   display: flex;
   flex-direction: column;
+  color: white;
 
   &__list {
     align-self: flex-end;
     display: flex;
-    justify-content: space-between;
-    width: 30vw;
+    flex-direction: column;
+    text-align: right;
 
     &__item {
       list-style: none;
+      padding-bottom: 2rem;
     }
 
     &__link {
-      opacity: 0.2;
+      opacity: 0.3;
       &:hover {
         opacity: 1;
         cursor: pointer;
