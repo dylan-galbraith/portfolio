@@ -24,7 +24,7 @@ const scrollToContact = (e) => {
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <NavBar home={scrollToHome} about={scrollToAbout} work={scrollToWork} contact={scrollToContact} />
       <Home scrollDown={scrollToAbout} />
       <About scrollUp={scrollToHome} scrollDown={scrollToWork} />
       <Work scrollUp={scrollToAbout} scrollDown={scrollToContact} />
