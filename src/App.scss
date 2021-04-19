@@ -21,6 +21,9 @@
   // scroll-snap-points-y: repeat(90vh);
   // scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  @include tablet {
+    background-size: auto 120%;
+  }
   @include desktop {
     background-size: 100%;
   }
