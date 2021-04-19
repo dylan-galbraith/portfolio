@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/NavBar.scss'
 
 export default function NavBar({ home, about, work, contact }) {
+
+  const [menu, setMenu] = useState(false)
+
+  function toggleMenu() {
+    setMenu(!menu)
+  }
+
   return (
     <nav className="nav">
-      <ul className="nav__list">
+      <ul className={menu ? "nav__list nav__list--mobile" : "nav__list"}>
         <li onClick={home} className="nav__list__item"><a className="nav__list__link">home</a></li>
         <li onClick={about} className="nav__list__item"><a className="nav__list__link">about</a></li>
         <li onClick={work} className="nav__list__item"><a className="nav__list__link">work</a></li>
         <li onClick={contact} className="nav__list__item"><a className="nav__list__link">contact</a></li>
       </ul>
+      <p onClick={toggleMenu} className="nav__list__menu">{menu ? "close" : "menu"}</p>
     </nav>
   )
 }
