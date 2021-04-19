@@ -1,0 +1,28 @@
+.nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  padding: 2rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  &__list {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+
+    &__item {
+      list-style: none;
+    }
+
+    &__link {
+      opacity: 0.2;
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+}
