@@ -44,7 +44,7 @@
 
 .arrow {
   display: none;
-  @include tablet {
+  @include desktop {
     display: initial;
     z-index: 1;
     display: initial;

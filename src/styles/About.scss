@@ -19,6 +19,9 @@
     width: 100vw;
     @include tablet {
       flex-direction: row;
+      width: 90%;
+    }
+    @include desktop {
       width: 70%;
     }
   }
