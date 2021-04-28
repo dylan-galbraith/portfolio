@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom'
 export default function NavBar() {
   return (
     <nav className="nav">
-      <NavLink to='/about' exact className="nav__link">about</NavLink>
-      <NavLink to='/work' exact className="nav__link">work</NavLink>
-      <NavLink to='/contact' exact className="nav__link">contact</NavLink>
+      <NavLink to='/' exact className="nav__link nav__link--home">home</NavLink>
+      <NavLink to='/about' className="nav__link">about</NavLink>
+      <NavLink to='/work' className="nav__link">work</NavLink>
+      <NavLink to='/contact' className="nav__link">contact</NavLink>
     </nav>
   )
 }

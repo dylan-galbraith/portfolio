@@ -13,9 +13,22 @@
 .nav {
   position: fixed;
   display: flex;
-  flex-direction: column;
+  right: 1rem;
+  width: 100%;
+  justify-content: flex-end;
 
   &__link {
     text-decoration: none;
+    text-align: right;
+    padding: 1rem;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
+
+    &--home {
+      position: fixed;
+      left: 0;
+    }
   }
 }
