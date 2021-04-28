@@ -1,0 +1,103 @@
+@use './variables' as *;
+
+// Breakpoints
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+      @content;
+  } 
+}
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+      @content;
+  }
+}
+
+// Styling
+@mixin button {
+  background-color: $secondary-background;
+  border: 1px solid $border-color;
+  color: $border-color;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  @include tablet {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@mixin page-heading {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  font-weight: 200;
+  &--main {
+    letter-spacing: 0.6rem;
+  }
+  @include tablet {
+    padding-bottom: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 3.5rem;
+  }
+}
+
+@mixin container {
+  background-color: $secondary-background;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    width: 60%;
+    margin: 2rem auto;
+  }
+}
+
+@mixin list-item {
+  text-decoration: none;
+  border-top: 0.1px solid $border-color;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  @include tablet {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  &--top {
+    border-top: none;
+  }
+}
+
+
+@mixin input {
+  background-color: $secondary-background;
+  border: none;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+  @include tablet {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@mixin icon {
+  height: 0.8rem;
+  @include tablet {
+    height: 1.5rem;
+  }
+}
