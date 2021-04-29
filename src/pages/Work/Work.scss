@@ -47,8 +47,9 @@
   }
 
   &__project {
-    margin: 1%;
+    margin: 1rem;
     @include tablet {
+      margin: 1%;
       width: 48%;
     }
   
