@@ -24,6 +24,13 @@
     <meta property="twitter:image" content="./home-page-image.png">
   </head>
   <body>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input placeholder="first name" name="fName"/>
+      <input placeholder="last name"name="lName" />
+      <input placeholder="email address" name="email" />
+      <textarea placeholder="message" name="message" ></textarea>
+      <button type="submit">SEND</button>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
