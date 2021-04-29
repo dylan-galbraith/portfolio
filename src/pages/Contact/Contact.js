@@ -12,7 +12,7 @@ export default function Contact() {
       <div className="contact__hero">
         <h1 className="contact__heading">contact<br/>me</h1>
       </div>
-      <form className="contact__form">
+      <form className="contact__form" name="contact" method="POST" data-netlify="true">
         <input className="contact__input" placeholder="first name"/>
         <input className="contact__input" placeholder="last name"/>
         <input className="contact__input" placeholder="email address"/>
