@@ -1,9 +1,13 @@
+@use '../../partials/mixins' as *;
+
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding-bottom: 6rem;
+  @include desktop {
+    padding-bottom: 6rem;
+  }
 
   &__hero {
     display: flex;
@@ -13,16 +17,25 @@
   }
 
   &__heading {
-    font-size: 12rem;
+    font-size: 5rem;
     font-weight: 800;
-    line-height: 10rem;
-    padding-left: 10rem;
+    line-height: 4rem;
+    padding: 1rem;
+    @include desktop {
+      font-size: 12rem;
+      line-height: 10rem;
+      padding-left: 10rem;  
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 100%;
+    padding: 1rem;
+    @include desktop {
+      width: 50vw;  
+    }
   }
 
   &__input {
@@ -47,11 +60,18 @@
     padding: 1rem;
     letter-spacing: 1rem;
     margin-top: 1rem;
-    &:hover {
+    &:focus {
       background-color: white;
       color: black;
-      cursor: pointer;
       font-weight: bold;
+    }
+    @include desktop {
+      &:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        font-weight: bold;
+      }  
     }
   }
 }
