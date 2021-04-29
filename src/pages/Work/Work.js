@@ -3,6 +3,7 @@ import './Work.scss'
 import fittrack from '../../assets/images/fittrack/fittrack.png'
 import connectmd from '../../assets/images/connectmd/connectmd.png'
 import andrea from '../../assets/images/andrea.png'
+import hangman from '../../assets/images/hangman/hangman.png'
 import { Link } from 'react-router-dom'
 
 export default function Work() {
@@ -25,6 +26,9 @@ export default function Work() {
         </Link>
         <Link to='/andrea-parsons-cosmetics' className="grid__project grid__project--long">
           <img className="grid__project__image" src={andrea} alt="" />
+        </Link>
+        <Link to='/hangman' className="grid__project">
+          <img className="grid__project__image" src={hangman} alt="" />
         </Link>
       </div>
     </main>
