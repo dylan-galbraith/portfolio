@@ -35,6 +35,10 @@
       position: fixed;
       left: 2rem;
       top: 1rem;
+      font-size: 2rem;
+      &:hover {
+        font-weight: 400;
+      }
     }
   }
 }
@@ -42,6 +46,10 @@
 .active {
   opacity: 1;
   font-weight: 800;
+}
+
+.hidden {
+  display: none;
 }
 
 .footer {
