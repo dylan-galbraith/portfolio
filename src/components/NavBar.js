@@ -1,16 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-import menu from '../assets/icons/menu.svg'
 
 export default function NavBar() {
 
   const location = useLocation();
-  console.log(location.pathname);
-
-  const [open, setOpen] = useState(true)
-  function openMenu() {
-    setOpen(!open)
-  }
 
   return (
     <nav className={location.pathname==="/" ? "nav" : "nav nav__background"}>
