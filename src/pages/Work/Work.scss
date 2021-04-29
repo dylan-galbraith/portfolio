@@ -149,6 +149,7 @@
   &__images {
     display: flex;
     justify-content: space-between;
+    max-height: 100vw;
     @include tablet {
       flex-direction: row;
       width: 100%;
