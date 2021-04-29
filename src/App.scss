@@ -62,8 +62,12 @@
     opacity: 0.4;
     margin: 2rem 2rem 8rem;
     height: 2rem;
-    @include desktop {
+    @include tablet {
       height: 3rem;
+      margin: 2rem 2rem 8rem;
+
+    }
+    @include desktop {
       margin: 4rem 2rem;
       &:hover {
         opacity: 1;
