@@ -27,6 +27,7 @@
     width: fit-content;
     &:hover {
       opacity: 1;
+      font-weight: 800;
     }
 
     &--home {
@@ -35,4 +36,9 @@
       top: 1rem;
     }
   }
+}
+
+.active {
+  opacity: 1;
+  font-weight: 800;
 }

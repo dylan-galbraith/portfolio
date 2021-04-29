@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
+import Work from './pages/Work/Work';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
+          <Route path='/work' component={Work} />
         </Switch>
       </BrowserRouter>
     </div>

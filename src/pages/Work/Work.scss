@@ -1,0 +1,43 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+
+  &__hero {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    height: 100vh;
+  }
+
+  &__heading {
+    font-size: 12rem;
+    font-weight: 800;
+    line-height: 10rem;
+    padding-left: 10rem;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  justify-content: center;
+}
+
+.project {
+  width: 30vw;
+  height: 30vw;
+  margin: 1rem;
+
+  &--long {
+    width: 62vw;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+}
