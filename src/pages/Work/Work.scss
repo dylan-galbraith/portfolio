@@ -98,7 +98,7 @@
   &__heading {
     font-size: 4rem;
     font-weight: 800;
-    line-height: 5rem;
+    line-height: 4rem;
     @include tablet {
       font-size: 8rem;
       line-height: 8rem;
@@ -110,24 +110,27 @@
   }
 
   &__tech {
-    font-size: 1.5rem;
     letter-spacing: 0.1rem;
     opacity: 0.4;
-    padding-left: 0.5rem;
+    padding-left: 0.2rem;
+    @include tablet {
+      font-size: 1.5rem;
+      padding-left: 0.5rem;
+    }
   }
 
   &__bio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 0 1rem;
     @include desktop {
       width: 70vw;
     }
   }
 
   &__text {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 200;
     line-height: 1.2rem;
     padding: 1rem 0;
@@ -146,33 +149,46 @@
   &__images {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 2rem 0;
+    @include tablet {
+      flex-direction: row;
+      width: 100%;
+      padding: 2rem 0;  
+    }
 
     &__each {
-      height: 65vh;
+      width: 32%;
+      @include tablet {
+        height: 65vh;
+      }
     }
   }
 
   &__cta {
-    padding-top: 2rem;
+    padding-top: 1rem;
+    @include tablet {
+      padding-top: 2rem;
+    }
   }
 
   &__label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
 
   &__link {
     font-weight: 500;
+    font-size: 0.9rem;
+    opacity: 0.5;
     @include tablet {
       font-size: 1.2rem;
     }
     @include desktop {
       text-decoration: none;
       font-size: 1.5rem;
-      opacity: 0.4;
       &:hover {
         opacity: 1;
       }  
