@@ -121,7 +121,13 @@
     }
 
     &__lower {
-      padding-top: 2.2rem;
+      padding-top: 1rem;
+      @include tablet {
+        padding-top: 1.5rem;
+      }
+      @include desktop {
+        padding-top: 2.2rem;
+      }
     }
   }
 
@@ -146,7 +152,7 @@
     }
     @include desktop {
       font-size: 1.5rem;
-      line-height: 2.5rem;
+      line-height: 2.2rem;
       text-align: justify;
       font-weight: 300;
     }  
