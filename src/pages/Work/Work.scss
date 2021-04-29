@@ -91,6 +91,11 @@
     font-weight: 800;
     line-height: 5rem;
     padding: 1rem;
+    @include tablet {
+      font-size: 8rem;
+      line-height: 8rem;
+      padding: 2rem;  
+    }
     @include desktop {
       font-size: 12rem;
       line-height: 10rem;
@@ -111,6 +116,9 @@
 
   &__bio {
     padding: 1rem;
+    @include tablet {
+      padding: 2rem;
+    }
     @include desktop {
       margin-left: 2rem;
     }
@@ -121,6 +129,10 @@
     font-weight: 200;
     line-height: 1.2rem;
     padding: 1rem 0;
+    @include tablet {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
     @include desktop {
       font-size: 1.8rem;
       line-height: 3rem;
@@ -132,7 +144,9 @@
 
   &__link {
     font-weight: 500;
-
+    @include tablet {
+      font-size: 1.2rem;
+    }
     @include desktop {
       text-decoration: none;
       font-size: 1.5rem;
