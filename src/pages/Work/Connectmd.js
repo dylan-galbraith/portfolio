@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import image1 from '../../assets/images/connectmd/screenshot1.png'
 import image2 from '../../assets/images/connectmd/screenshot2.png'
 import image3 from '../../assets/images/connectmd/screenshot3.png'
@@ -27,6 +27,11 @@ const responsive = {
 };
 
 export default function Connectmd() {
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
   return (
     <main className="project">
       <div className="project__hero">

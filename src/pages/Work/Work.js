@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Work.scss'
 import fittrack from '../../assets/images/fittrack/fittrack.png'
 import connectmd from '../../assets/images/connectmd/connectmd.png'
@@ -6,6 +6,11 @@ import andrea from '../../assets/images/andrea.png'
 import { Link } from 'react-router-dom'
 
 export default function Work() {
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
   return (
     <main className="work">
       <div className="work__hero">

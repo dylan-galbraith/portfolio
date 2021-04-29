@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import image1 from '../../assets/images/fittrack/fittrack-screenshot1.jpg'
 import image2 from '../../assets/images/fittrack/fittrack-screenshot2.jpg'
 
@@ -25,6 +25,11 @@ const responsive = {
 };
 
 export default function Fittrack() {
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
   return (
     <main className="project">
       <div className="project__hero">

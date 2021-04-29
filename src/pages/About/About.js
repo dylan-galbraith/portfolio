@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './About.scss'
 import heroImage from '../../assets/images/about.png'
 
 export default function About() {
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+
   return (
     <main className="about">
       <div className="about__hero">
