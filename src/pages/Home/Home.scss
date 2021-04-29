@@ -1,11 +1,18 @@
+@use '../../partials/mixins' as *;
+
 .home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  padding-left: 10rem;
+  padding: 1rem;
+  @include desktop {
+    padding-left: 10rem;
+  }
 
   &__logo {
-    width: 60vw;
+    @include desktop {
+      width: 60vw;
+    }
   }
 }
