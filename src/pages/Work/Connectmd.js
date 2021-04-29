@@ -24,7 +24,7 @@ export default function Connectmd() {
           <img className="project__images__each" src={image4} alt="" />
           {/* <img className="project__images__each" src={image5} alt="" /> */}
         </div>
-        <p className="project__text">To build this application, we used React and SASS for the front-end. For the back-end, we made a mock server using Express and Node.js.</p>
+        <p className="project__text">To build this application, we used React and JavaScript, along with SASS for the front-end. For the back-end, we made a mock server using Express and Node.js. Our server is functional, but for the hackathon, we didn't feel it necessary to connect it to the front-end.</p>
         <div className="project__cta">
           <p className="project__label">View the code on GitHub: </p>
           <a className="project__link" href="https://github.com/dylan-galbraith/tinder-md" target="_blank" rel="noopener noreferrer">https://github.com/dylan-galbraith/tinder-md</a>
