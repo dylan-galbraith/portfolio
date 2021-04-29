@@ -6,6 +6,9 @@
   justify-content: center;
   min-height: 100vh;
   padding: 1rem;
+  @include tablet {
+    padding: 2rem;
+  }
   @include desktop {
     padding-left: 10rem;
   }
