@@ -21,6 +21,11 @@
     font-weight: 800;
     line-height: 5rem;
     padding: 1rem;
+    @include tablet {
+      font-size: 10rem;
+      line-height: 8rem;
+      padding: 2rem;  
+    }
     @include desktop {
       font-size: 12rem;
       line-height: 10rem;
@@ -40,6 +45,9 @@
 
   &__project {
     margin: 1rem;
+    @include tablet {
+      width: 45%;
+    }
     @include desktop {
       width: 30vw;
       height: 30vw;
@@ -47,6 +55,9 @@
     }
   
     &--long {
+      @include tablet {
+        width: 100%;
+      }
       @include desktop {
         width: 62vw;
       }
