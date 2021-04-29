@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
+import Andrea from './pages/Work/Andrea';
 import Connectmd from './pages/Work/Connectmd';
 import Fittrack from './pages/Work/Fittrack';
 import Work from './pages/Work/Work';
@@ -21,6 +22,7 @@ function App() {
           <Route path='/work' component={Work} />
           <Route path='/fittrack' component={Fittrack} />
           <Route path='/connectmd' component={Connectmd} />
+          <Route path='/andrea-parsons-cosmetics' component={Andrea} />
         </Switch>
         <Footer />
       </BrowserRouter>
