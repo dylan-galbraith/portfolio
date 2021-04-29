@@ -6,12 +6,15 @@
   align-items: center;
   margin: 0 auto;
 
-
   &__hero {
     display: flex;
     width: 100vw;
     align-items: center;
     height: 100vh;
+    padding-bottom: 8rem;
+    @include tablet {
+      padding-bottom: 0;
+    }
   }
 
   &__heading {

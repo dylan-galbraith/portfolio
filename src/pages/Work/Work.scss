@@ -14,6 +14,10 @@
     width: 100vw;
     align-items: center;
     height: 100vh;
+    padding-bottom: 8rem;
+    @include tablet {
+      padding-bottom: 0;
+    }
   }
 
   &__heading {
@@ -80,6 +84,10 @@
     width: 100vw;
     align-items: center;
     height: 100vh;
+    padding-bottom: 8rem;
+    @include tablet {
+      padding-bottom: 0;
+    }
   }
 
   &__heading {
