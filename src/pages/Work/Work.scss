@@ -37,29 +37,24 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1rem;
+  @include tablet {
+    padding: 2rem;
+  }
   @include desktop {
-    width: 80vw;
+    width: 70vw;
   }
 
   &__project {
-    margin: 1rem;
+    margin: 1%;
     @include tablet {
-      width: 45%;
-    }
-    @include desktop {
-      width: 30vw;
-      height: 30vw;
-      margin: 1rem;  
+      width: 48%;
     }
   
     &--long {
       @include tablet {
         width: 100%;
-      }
-      @include desktop {
-        width: 62vw;
       }
     }
   
