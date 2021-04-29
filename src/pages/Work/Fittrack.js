@@ -26,24 +26,24 @@ const responsive = {
 
 export default function Fittrack() {
   return (
-    <main className="fittrack">
-      <div className="fittrack__hero">
-        <h1 className="fittrack__heading">FitTrack</h1>
+    <main className="project">
+      <div className="project__hero">
+        <h1 className="project__heading">FitTrack</h1>
       </div>
-      <div className="fittrack__info">
+      <div className="project__info">
         <div>
           <Carousel className="carousel" responsive={responsive}>
             <img className="carousel__image" src={image1} alt="" />
             <img className="carousel__image" src={image2} alt="" />
           </Carousel>
         </div>
-        <div className="fittrack__bio">
-          <p className="fittrack__text">I developed FitTrack while in school as my final capstone assignment. Given 10 days, we had to come up with an idea for a web application that would solve some type of issue. I built FitTrack, a mobile application that allows you to create your own exercises and routines, and track your progress at the gym.</p>
-          <p className="fittrack__text">To build this application, I used React and JavaScript, as well as CSS/SASS for my front-end. To set up authentication and authorization, I used Firebase. For the back-end, I used MySQL and Prisma to build the database, along with Express and Node.js for the server.</p>
-          <p className="fittrack__text">Try out FitTrack: </p>
-          <a className="fittrack__link" href="https://fit-track.netlify.app/" target="_blank" rel="noopener noreferrer">https://fit-track.netlify.app/</a>
-          <p className="fittrack__text">View the code on GitHub: </p>
-          <a className="fittrack__link" href="https://github.com/dylan-galbraith/fit-track" target="_blank" rel="noopener noreferrer">https://github.com/dylan-galbraith/fit-track</a>
+        <div className="project__bio">
+          <p className="project__text">I developed FitTrack while in school as my final capstone assignment. Given 10 days, we had to come up with an idea for a web application that would solve some type of issue. I built FitTrack, a mobile application that allows you to create your own exercises and routines, and track your progress at the gym.</p>
+          <p className="project__text">To build this application, I used React and JavaScript, as well as CSS/SASS for my front-end. To set up authentication and authorization, I used Firebase. For the back-end, I used MySQL and Prisma to build the database, along with Express and Node.js for the server.</p>
+          <p className="project__text">Try out FitTrack: </p>
+          <a className="project__link" href="https://fit-track.netlify.app/" target="_blank" rel="noopener noreferrer">https://fit-track.netlify.app/</a>
+          <p className="project__text">View the code on GitHub: </p>
+          <a className="project__link" href="https://github.com/dylan-galbraith/fit-track" target="_blank" rel="noopener noreferrer">https://github.com/dylan-galbraith/fit-track</a>
         </div>
       </div>
     </main>

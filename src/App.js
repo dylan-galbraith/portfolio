@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
+import Connectmd from './pages/Work/Connectmd';
 import Fittrack from './pages/Work/Fittrack';
 import Work from './pages/Work/Work';
 
@@ -19,6 +20,7 @@ function App() {
           <Route path='/contact' component={Contact} />
           <Route path='/work' component={Work} />
           <Route path='/fittrack' component={Fittrack} />
+          <Route path='/connectmd' component={Connectmd} />
         </Switch>
         <Footer />
       </BrowserRouter>
