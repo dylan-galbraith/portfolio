@@ -31,7 +31,7 @@ export default function Fittrack() {
   }, [])
 
   return (
-    <main className="project">
+    <main className="project work">
       <div className="project__hero">
         <h1 className="project__heading">FitTrack</h1>
       </div>
