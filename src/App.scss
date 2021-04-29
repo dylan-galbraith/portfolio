@@ -42,3 +42,18 @@
   opacity: 1;
   font-weight: 800;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  &__icon {
+    opacity: 0.4;
+    height: 3rem;
+    margin: 4rem 2rem;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
