@@ -14,7 +14,7 @@ export default function Work() {
   return (
     <main className="work">
       <div className="work__hero">
-        <h1 className="work__heading">past<br/>work.</h1>
+        <h1 className="work__heading">past<br/>work</h1>
       </div>
       <div className="grid">
         <Link to='/connectmd' className="grid__project">

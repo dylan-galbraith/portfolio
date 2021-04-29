@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <main className="contact">
       <div className="contact__hero">
-        <h1 className="contact__heading">contact<br/>me.</h1>
+        <h1 className="contact__heading">contact<br/>me</h1>
       </div>
       <form className="contact__form">
         <input className="contact__input" placeholder="first name"/>
