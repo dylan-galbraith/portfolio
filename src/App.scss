@@ -25,16 +25,12 @@
   right: 0;
   width: 100vw;
   padding: 0.5rem 0;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0,0,0,0));
   @include tablet {
     flex-direction: column;
     width: fit-content;
-  }
-
-  &__background {
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(0,0,0,0));
-    @include tablet {
-      background-image: none;
-    }
+    background-image: none;
+    right: 1rem;
   }
 
   &__link {
