@@ -149,7 +149,7 @@
   &__images {
     display: flex;
     justify-content: space-between;
-    max-height: fit-content;
+    max-height: 90vw;
     @include tablet {
       flex-direction: row;
       width: 100%;
