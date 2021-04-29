@@ -20,10 +20,22 @@
 .nav {
   position: fixed;
   display: flex;
-  flex-direction: column;
   align-items: flex-end;
-  padding: 1rem;
+  justify-content: flex-end;
   right: 0;
+  width: 100vw;
+  padding: 0.5rem 0;
+  @include tablet {
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  &__background {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0,0,0,0));
+    @include tablet {
+      background-image: none;
+    }
+  }
 
   &__link {
     text-decoration: none;
@@ -37,14 +49,21 @@
     }
 
     &--home {
-      position: fixed;
-      left: 2rem;
-      top: 1rem;
-      font-size: 2rem;
-      &:hover {
-        font-weight: 400;
+      font-weight: 800;
+      line-height: 0.8rem;
+      text-align: left;
+      margin-right: auto;
+      @include tablet {
+        left: 1rem;
+        top: 1rem;
+        position: fixed;
       }
     }
+  }
+
+  &__menu {
+    height: 2rem;
+    opacity: 0.4;
   }
 }
 
