@@ -1,30 +1,7 @@
 import React, { useEffect } from 'react'
 import image1 from '../../assets/images/connectmd/screenshot1.png'
 import image2 from '../../assets/images/connectmd/screenshot2.png'
-import image3 from '../../assets/images/connectmd/screenshot3.png'
 import image4 from '../../assets/images/connectmd/screenshot4.png'
-import image5 from '../../assets/images/connectmd/screenshot5.png'
-
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 1
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 1
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
-};
 
 export default function Connectmd() {
 
