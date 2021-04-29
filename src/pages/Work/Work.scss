@@ -21,9 +21,10 @@
   }
 
   &__heading {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 800;
-    line-height: 5rem;
+    line-height: 4rem;
+    letter-spacing: -0.3rem;
     padding: 1rem;
     @include tablet {
       font-size: 10rem;
@@ -96,16 +97,17 @@
   }
 
   &__heading {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 800;
     line-height: 4rem;
+    letter-spacing: -0.3rem;
     @include tablet {
       font-size: 8rem;
-      line-height: 8rem;
+      line-height: 6rem;
     }
     @include desktop {
       font-size: 12rem;
-      line-height: 10rem;
+      line-height: 9rem;
     }
   }
 

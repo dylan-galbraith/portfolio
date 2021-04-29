@@ -9,7 +9,7 @@ export default function Andrea() {
   return (
     <main className="project">
       <div className="project__hero">
-        <h1 className="project__heading">Andrea Parsons</h1>
+        <h1 className="project__heading">Andrea<br/>Parsons</h1>
         <p className="project__tech">REACT | SASS | JAVASCRIPT | FIREBASE</p>
       </div>
       <div className="project__info">
