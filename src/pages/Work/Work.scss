@@ -157,9 +157,6 @@
 
     &__each {
       width: 32%;
-      @include tablet {
-        height: 65vh;
-      }
     }
   }
 

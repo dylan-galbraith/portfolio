@@ -36,21 +36,20 @@ export default function Connectmd() {
     <main className="project">
       <div className="project__hero">
         <h1 className="project__heading">Connect<br/>MD</h1>
+        <p className="project__tech">REACT | SASS | JAVASCRIPT | EXPRESS | NODE.JS</p>
       </div>
-      <div className="project__info">
-        <div>
-          <Carousel className="carousel" responsive={responsive}>
-            <img className="carousel__image" src={image1} alt="" />
-            <img className="carousel__image" src={image2} alt="" />
-            <img className="carousel__image" src={image3} alt="" />
-            <img className="carousel__image" src={image4} alt="" />
-            <img className="carousel__image" src={image5} alt="" />
-          </Carousel>
+      <div className="project__bio">
+        <p className="project__text">This project was developed for a hackathon sponsored by Google. Given 24 HOURS, each team had to come up with a way to make health care more accessible to people through technology. Each team was made up of Developers, Designers, Digital Marketers, and Data Scientists. Our team came up with ConnectMD, a mobile application designed for those who's first language ins't English. The app would match each patient with a doctor who does speak their language, and can accomodate them for any religious/cultural/language preferences that were stopping them from seeing a doctor.</p>
+        <div className="project__images">
+          <img className="project__images__each" src={image1} alt="" />
+          <img className="project__images__each" src={image2} alt="" />
+          {/* <img className="project__images__each" src={image3} alt="" /> */}
+          <img className="project__images__each" src={image4} alt="" />
+          {/* <img className="project__images__each" src={image5} alt="" /> */}
         </div>
-        <div className="project__bio">
-          <p className="project__text">This project was developed for a hackathon sponsored by Google. Given 24 HOURS, each team had to come up with a way to make health care more accessible to people through technology. Each team was made up of Developers, Designers, Digital Marketers, and Data Scientists. Our team came up with ConnectMD, a mobile application designed for those who's first language ins't English. The app would match each patient with a doctor who does speak their language, and can accomodate them for any religious/cultural/language preferences that were stopping them from seeing a doctor.</p>
-          <p className="project__text">To build this application, we used React and SASS for the front-end. For the back-end, we made a mock server using Express and Node.js.</p>
-          <p className="project__text">View the code on GitHub: </p>
+        <p className="project__text">To build this application, we used React and SASS for the front-end. For the back-end, we made a mock server using Express and Node.js.</p>
+        <div className="project__cta">
+          <p className="project__label">View the code on GitHub: </p>
           <a className="project__link" href="https://github.com/dylan-galbraith/tinder-md" target="_blank" rel="noopener noreferrer">https://github.com/dylan-galbraith/tinder-md</a>
         </div>
       </div>
