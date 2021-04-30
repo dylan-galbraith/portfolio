@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import arrow from '../../assets/icons/arrow.svg'
 
 export default function Andrea() {
 
@@ -11,6 +12,7 @@ export default function Andrea() {
       <div className="project__hero">
         <h1 className="project__heading">Andrea<br/>Parsons</h1>
         <p className="project__tech">REACT | SASS | JAVASCRIPT | FIREBASE</p>
+        <img className="project__arrow" src={arrow} alt="" />
       </div>
       <div className="project__info">
         <div className="project__bio">

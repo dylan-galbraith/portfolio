@@ -38,6 +38,10 @@
     }
   }
 
+  &__arrow {
+    @include arrow;
+  }
+
   &__form {
     display: flex;
     flex-direction: column;

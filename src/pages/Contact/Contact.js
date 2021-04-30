@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Contact.scss'
+import arrow from '../../assets/icons/arrow.svg'
 
 export default function Contact() {
 
@@ -11,6 +12,7 @@ export default function Contact() {
     <main className="contact">
       <div className="contact__hero">
         <h1 className="contact__heading">contact<br/>me</h1>
+        <img className="contact__arrow" src={arrow} alt="" />
       </div>
       <form className="contact__form" name="contact" netlify method="POST">
         <input type="hidden" name="form-name" value="contact" />

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import image1 from '../../assets/images/connectmd/screenshot1.png'
 import image2 from '../../assets/images/connectmd/screenshot2.png'
 import image4 from '../../assets/images/connectmd/screenshot4.png'
+import arrow from '../../assets/icons/arrow.svg'
 
 export default function Connectmd() {
 
@@ -14,6 +15,7 @@ export default function Connectmd() {
       <div className="project__hero">
         <h1 className="project__heading">Connect<br/>MD</h1>
         <p className="project__tech">REACT | SASS | JAVASCRIPT | EXPRESS | NODE.JS</p>
+        <img className="project__arrow" src={arrow} alt="" />
       </div>
       <div className="project__bio">
         <p className="project__text">This project was developed for a hackathon sponsored by Google. Given 24 HOURS, each team had to come up with a way to make health care more accessible to people through technology. Each team was made up of Developers, Designers, Digital Marketers, and Data Scientists. Our team came up with ConnectMD, a mobile application designed for those who's first language ins't English. The app would match each patient with a doctor who does speak their language, and can accomodate them for any religious/cultural/language preferences that were stopping them from seeing a doctor.</p>

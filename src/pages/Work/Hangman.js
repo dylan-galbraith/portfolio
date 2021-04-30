@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import image1 from '../../assets/images/hangman/screenshot1.png'
+import arrow from '../../assets/icons/arrow.svg'
 
 export default function Hangman() {
 
@@ -12,6 +13,7 @@ export default function Hangman() {
       <div className="project__hero">
         <h1 className="project__heading">Hangman</h1>
         <p className="project__tech project__tech__lower">REACT | SASS | JAVASCRIPT | EXPRESS | NODE.JS</p>
+        <img className="project__arrow" src={arrow} alt="" />
       </div>
       <div className="project__bio">
         <p className="project__text">Hangman was developed by myself and another classmate for a pair-programming competition in which we came in SECOND PLACE. In just one day, we were tasked with designing and developing anything we wanted. We decided to challenge ourselves, so we created an interactive online version of the classic game, Hangman. When the user clicks the START button, a request goes to our server. The server then generates a random word consisting of at least 8 characters, and responds to the request with it. The word is then displayed as empty boxes, and the user can begin guessing. If the user guesses correctly, any boxes that contain that letter are revealed. If wrong, a part of the body gets hanged.</p>

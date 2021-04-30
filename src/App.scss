@@ -30,6 +30,7 @@
   width: 100vw;
   padding: 0.5rem 0;
   background-image: linear-gradient(rgb(0, 0, 0), rgb(0,0,0,0));
+  z-index: 10;
   @include desktop {
     flex-direction: column;
     width: fit-content;
@@ -43,9 +44,11 @@
     padding: 1rem;
     opacity: 0.7;
     width: fit-content;
-    &:hover {
-      opacity: 1;
-      font-weight: 800;
+    @include desktop {
+      &:hover {
+        opacity: 1;
+        font-weight: 800;
+      }
     }
 
     &--home {

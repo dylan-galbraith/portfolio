@@ -5,6 +5,7 @@ import connectmd from '../../assets/images/connectmd/connectmd.png'
 import andrea from '../../assets/images/andrea.png'
 import hangman from '../../assets/images/hangman/hangman.png'
 import { Link } from 'react-router-dom'
+import arrow from '../../assets/icons/arrow.svg'
 
 export default function Work() {
 
@@ -16,6 +17,7 @@ export default function Work() {
     <main className="work">
       <div className="work__hero">
         <h1 className="work__heading">previous<br/>work</h1>
+        <img className="work__arrow" src={arrow} alt="" />
       </div>
       <div className="grid">
         <Link to='/connectmd' className="grid__project">

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import image1 from '../../assets/images/fittrack/fittrack-screenshot1.jpg'
 import image2 from '../../assets/images/fittrack/fittrack-screenshot2.jpg'
 import image3 from '../../assets/images/fittrack/fittrack-screenshot3.jpg'
+import arrow from '../../assets/icons/arrow.svg'
 
 export default function Fittrack() {
 
@@ -14,6 +15,7 @@ export default function Fittrack() {
       <div className="project__hero">
         <h1 className="project__heading">FitTrack</h1>
         <p className="project__tech"> REACT | SASS | JAVASCRIPT | FIREBASE | MYSQL | PRISMA | EXPRESS | NODE.JS</p>
+        <img className="project__arrow" src={arrow} alt="" />
       </div>
       <div className="project__bio">
         <p className="project__text">I developed FitTrack while in school as my final capstone assignment. Given 10 days, we had to come up with an idea for a web application that would solve some type of issue. I decided to design and build FitTrack, a mobile application that allows you to create your own exercises and routines, and track your progress at the gym. After creating an account, the user can create their own custom exercises, create records of them performing those exercises, and add them to custom routines as well. This allows FitTrack to be completely customizable to each user.</p>

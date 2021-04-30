@@ -37,6 +37,10 @@
       padding-left: 10rem;  
     }
   }
+
+  &__arrow {
+    @include arrow;
+  }
 }
 
 .grid {
@@ -129,6 +133,10 @@
         padding-top: 2.2rem;
       }
     }
+  }
+
+  &__arrow {
+    @include arrow;
   }
 
   &__bio {
