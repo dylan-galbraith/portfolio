@@ -86,7 +86,7 @@
 
   &__icon {
     opacity: 0.4;
-    margin: 4rem 2rem 4rem;
+    margin: 8rem 2rem;
     height: 2rem;
     @include tablet {
       height: 3rem;
@@ -94,7 +94,6 @@
 
     }
     @include desktop {
-      margin: 4rem 2rem;
       &:hover {
         opacity: 1;
         cursor: pointer;
