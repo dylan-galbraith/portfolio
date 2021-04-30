@@ -241,6 +241,9 @@
     justify-content: center;
     align-items: center;
     outline: none;
+    @include desktop {
+      padding: 0;
+    }
 
     &__image {
       width: 70%;
