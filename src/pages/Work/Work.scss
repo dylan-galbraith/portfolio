@@ -15,6 +15,7 @@
     align-items: center;
     height: 100vh;
     padding-bottom: 8rem;
+    position: relative;
     @include tablet {
       padding-bottom: 0;
     }
@@ -92,6 +93,7 @@
     height: 100vh;
     padding: 1rem;
     padding-bottom: 8rem;
+    position: relative;
     @include tablet {
       padding: 2rem;  
     }
