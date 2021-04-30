@@ -230,4 +230,27 @@
       }  
     }
   }
+
+  &__modal {
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+
+    &__image {
+      width: 70%;
+      object-fit: contain;
+    }
+    &__button {
+      border: none;
+      margin-top: 1rem;
+      position: absolute;
+      right: 1rem;
+      transform: rotate(-90deg);
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
 }
