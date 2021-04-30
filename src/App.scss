@@ -85,15 +85,15 @@
   justify-content: center;
 
   &__icon {
-    opacity: 0.4;
+    opacity: 0.7;
     margin: 8rem 2rem;
     height: 2rem;
     @include tablet {
       height: 3rem;
-      margin: 4rem 2rem 8rem;
-
     }
     @include desktop {
+      margin: 4rem 2rem 8rem;
+      opacity: 0.4;
       &:hover {
         opacity: 1;
         cursor: pointer;
