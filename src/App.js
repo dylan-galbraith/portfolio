@@ -21,11 +21,11 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
-          <Route path='/work' component={Work} />
-          <Route path='/fittrack' component={Fittrack} />
-          <Route path='/connectmd' component={Connectmd} />
-          <Route path='/andrea-parsons-cosmetics' component={Andrea} />
-          <Route path='/hangman' component={Hangman} />
+          <Route path='/work' exact component={Work} />
+          <Route path='/work/fittrack' component={Fittrack} />
+          <Route path='/work/connectmd' component={Connectmd} />
+          <Route path='/work/andrea-parsons-cosmetics' component={Andrea} />
+          <Route path='/work/hangman' component={Hangman} />
         </Switch>
         <Footer />
       </BrowserRouter>
