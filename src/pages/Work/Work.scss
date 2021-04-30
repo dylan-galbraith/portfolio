@@ -222,14 +222,17 @@
   &__link {
     font-weight: 800;
     font-size: 0.9rem;
-    opacity: 0.5;
+    opacity: 1;
     text-align: center;
+    color: rgb(187, 187, 187);
     @include tablet {
       font-size: 1.2rem;
     }
     @include desktop {
       text-decoration: none;
       font-size: 1.5rem;
+      opacity: 0.5;
+      color: white;
       &:hover {
         opacity: 1;
       }  

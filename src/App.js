@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import Success from './pages/Contact/Success';
 import Home from './pages/Home/Home';
 import Andrea from './pages/Work/Andrea';
 import Connectmd from './pages/Work/Connectmd';
@@ -20,7 +21,8 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/about' component={About} />
-          <Route path='/contact' component={Contact} />
+          <Route path='/contact' exact component={Contact} />
+          <Route path='/contact/success' component={Success} />
           <Route path='/work' exact component={Work} />
           <Route path='/work/fittrack' component={Fittrack} />
           <Route path='/work/connectmd' component={Connectmd} />

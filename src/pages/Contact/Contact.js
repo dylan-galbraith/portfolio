@@ -14,7 +14,7 @@ export default function Contact() {
         <h1 className="contact__heading">contact<br/>me</h1>
         <img className="contact__arrow" src={arrow} alt="" />
       </div>
-      <form className="contact__form" name="contact" netlify method="POST">
+      <form action='/contact/success' className="contact__form" name="contact" netlify method="POST">
         <input type="hidden" name="form-name" value="contact" />
         <input className="contact__input" placeholder="first name" name="firstName"/>
         <input className="contact__input" placeholder="last name"name="lastName" />
