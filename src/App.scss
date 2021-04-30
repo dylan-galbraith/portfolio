@@ -44,9 +44,6 @@
   animation-name: navbar;
   animation-duration: 4s;
   @include desktop {
-    flex-direction: column;
-    width: fit-content;
-    background-image: none;
     right: 1rem;
   }
 
@@ -57,9 +54,9 @@
     opacity: 0.7;
     width: fit-content;
     @include tablet {
+      margin-left: 1rem;
       &:hover {
         opacity: 1;
-        font-weight: 800;
       }
     }
 
@@ -68,10 +65,18 @@
       line-height: 0.8rem;
       text-align: left;
       margin-right: auto;
+      text-decoration: none;
+      padding: 1rem;
+      opacity: 0.7;
+      left: 0;
+      position: fixed;
       @include tablet {
         left: 1rem;
         top: 1rem;
         position: fixed;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
@@ -82,10 +87,58 @@
   }
 }
 
+@include tablet {
+  .nav__link {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .nav__link:before, .nav__link:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+  }
+  
+  .nav__link:before {
+    left: -2.5px;
+  }
+  .nav__link:after {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .nav__link:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .nav__link:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+  .active:before {
+    background: #fff;
+    width: 100%;
+    opacity: 1;  
+  }
+}
+
 .active {
   opacity: 1;
   font-weight: 800;
+  @include tablet {
+    font-weight: 400;
+  }
 }
+
 
 .hidden {
   display: none;
