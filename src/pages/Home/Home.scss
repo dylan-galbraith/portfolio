@@ -1,5 +1,14 @@
 @use '../../partials/mixins' as *;
 
+@keyframes heading {
+  0% {
+    left: -10rem;
+  }
+  100% {
+    left: 0rem;
+  }
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -11,10 +20,12 @@
     padding: 2rem 2rem 8rem;
   }
   @include desktop {
+    padding: 2rem;
     padding-left: 10rem;
   }
 
   &__logo {
+    animation: slideInLeft 2s;
     @include desktop {
       width: 60vw;
     }

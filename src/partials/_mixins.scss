@@ -18,6 +18,10 @@
   position: absolute;
   bottom: 8rem;
   left: 50vw;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  
   @include tablet {
     height: 2.5rem;
     bottom: 6rem;
