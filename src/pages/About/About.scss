@@ -16,8 +16,7 @@
     padding-bottom: 8rem;
     position: relative;
     @include tablet {
-      padding-bottom: 0;
-      padding: 2rem;  
+      padding: 2rem 2rem 8rem;  
     }
     @include desktop {
       padding-left: 10rem;  
