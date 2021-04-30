@@ -7,7 +7,7 @@ Modal.setAppElement(document.getElementById('root'))
 
 const customStyles = {
   overlay: {
-    backgroundColor: 'rgba(0,0,0,0.6)'
+    backgroundColor: 'rgba(0,0,0,0.7)'
   }
 }
 
