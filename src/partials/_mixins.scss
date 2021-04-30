@@ -20,6 +20,9 @@
   left: 50vw;
   @include tablet {
     height: 2.5rem;
+    bottom: 6rem;
+  }
+  @include desktop {
     bottom: 2rem;
   }
 }
