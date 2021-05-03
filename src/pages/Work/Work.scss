@@ -51,6 +51,9 @@
   @include tablet {
     width: 50rem;
   }
+  @include desktop {
+    width: 65rem;
+  }
 
   &__project {
     margin: 0.5rem;
@@ -64,11 +67,19 @@
         z-index: 5;
       }
     }
+    @include desktop {
+      height: 20rem;
+      width: 20rem;
+    }
   
     &--long {
       @include tablet {
-        width: 30rem;
+        width: 31rem;
         height: 15rem;
+      }
+      @include desktop {
+        width: 41rem;
+        height: 20rem;
       }
     }
   
