@@ -49,7 +49,7 @@ export default function Fittrack() {
       <div className="project__bio">
         <div className="project__intro">
           <p className="project__label">My Role: </p>
-          <p className="project__text project__text--line">Creator / Developer / Designer</p>
+          <p className="project__text project__text--line">Owner / Developer / Designer</p>
         </div>
         <div className="project__intro">
           <p className="project__label">Duration: </p>

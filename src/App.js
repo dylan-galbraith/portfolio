@@ -7,6 +7,7 @@ import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Andrea from './pages/Work/Andrea';
 import Connectmd from './pages/Work/Connectmd';
+import Dylan from './pages/Work/Dylan';
 import Fittrack from './pages/Work/Fittrack';
 import Hangman from './pages/Work/Hangman';
 import Work from './pages/Work/Work';
@@ -22,6 +23,7 @@ function App() {
           <Route path='/about' component={About} />
           <Route path='/contact' exact component={Contact} />
           <Route path='/work' exact component={Work} />
+          <Route path='/work/dylan-galbraith-portfolio' component={Dylan} />
           <Route path='/work/fittrack' component={Fittrack} />
           <Route path='/work/connectmd' component={Connectmd} />
           <Route path='/work/andrea-parsons-cosmetics' component={Andrea} />

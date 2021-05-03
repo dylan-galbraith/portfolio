@@ -47,21 +47,17 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 1rem;
   @include tablet {
-    padding: 2rem;
-  }
-  @include desktop {
-    width: 70vw;
+    width: 50rem;
   }
 
   &__project {
-    margin: 1rem;
-    outline: 1px solid rgb(207, 207, 207);
+    margin: 0.5rem;
+    border: 1px solid rgb(207, 207, 207);
     @include tablet {
-      margin: 1%;
-      width: 48%;
+      height: 15rem;
+      width: 15rem;
       transition: all 0.6s;
       &:hover {
         transform: scale(1.1);
@@ -71,11 +67,8 @@
   
     &--long {
       @include tablet {
-        width: 100%;
-        height: 45vw;
-      }
-      @include desktop {
-        height: 30vw;
+        width: 30rem;
+        height: 15rem;
       }
     }
   
