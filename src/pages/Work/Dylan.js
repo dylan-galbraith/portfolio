@@ -28,7 +28,7 @@ export default function Dylan() {
           <p className="project__text">To build this website, I used React because it is my favourite framework, and of course SASS for styling.</p>
           <div className="project__cta">
             <p className="project__label">View the code on GitHub: </p>
-            <a className="project__link" href="https://github.com/dylan-galbraith/andrea-parsons-cosmetics" target="_blank" rel="noopener noreferrer">https://github.com/dylan-galbraith/andrea-parsons-cosmetics</a>
+            <a className="project__link" href="https://github.com/dylan-galbraith/portfolio" target="_blank" rel="noopener noreferrer">https://github.com/dylan-galbraith/portfolio</a>
           </div>
         </div>
       </div>
