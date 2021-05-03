@@ -144,6 +144,12 @@
   display: none;
 }
 
+.only-mobile {
+  @include tablet {
+    display: none;
+  }
+}
+
 .footer {
   display: flex;
   justify-content: center;

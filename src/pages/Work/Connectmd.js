@@ -47,6 +47,14 @@ export default function Connectmd() {
         <img className="project__arrow" src={arrow} alt="" />
       </div>
       <div className="project__bio">
+        <div className="project__intro">
+          <p className="project__label">My Role: </p>
+          <p className="project__text project__text--line">Co-Creator / Developer</p>
+        </div>
+        <div className="project__intro">
+          <p className="project__label">Duration: </p>
+          <p className="project__text project__text--line">24 hours</p>
+        </div>
         <p className="project__text">This project was developed for a hackathon sponsored by Google. Given 24 HOURS, each team had to come up with a way to make health care more accessible to people through technology. Each team was made up of Developers, Designers, Digital Marketers, and Data Scientists. Our team came up with ConnectMD, a mobile application designed for those who's first language ins't English. The app would match each patient with a doctor who does speak their language, and can accomodate them for any religious/cultural/language preferences that were stopping them from seeing a doctor.</p>
         <div className="project__images">
           <img onClick={()=>openModal(image1)} className="project__images__each" src={image1} alt="" />

@@ -47,7 +47,16 @@ export default function Fittrack() {
         <img className="project__arrow" src={arrow} alt="" />
       </div>
       <div className="project__bio">
+        <div className="project__intro">
+          <p className="project__label">My Role: </p>
+          <p className="project__text project__text--line">Creator / Developer / Designer</p>
+        </div>
+        <div className="project__intro">
+          <p className="project__label">Duration: </p>
+          <p className="project__text project__text--line">3 weeks</p>
+        </div>
         <p className="project__text">I developed FitTrack while in school as my final capstone assignment. Given 10 days, we had to come up with an idea for a web application that would solve some type of issue. I decided to design and build FitTrack, a mobile application that allows you to create your own exercises and routines, and track your progress at the gym. After creating an account, the user can create their own custom exercises, create records of them performing those exercises, and add them to custom routines as well. This allows FitTrack to be completely customizable to each user.</p>
+        <p className="project__text only-mobile">Select images to enlarge:</p>
         <div className="project__images">
           <img onClick={()=>openModal(image1)} className="project__images__each" src={image1} alt="" />
           <img onClick={()=>openModal(image2)} className="project__images__each" src={image2} alt="" />

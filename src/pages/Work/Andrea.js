@@ -16,6 +16,14 @@ export default function Andrea() {
       </div>
       <div className="project__info">
         <div className="project__bio">
+        <div className="project__intro">
+          <p className="project__label">My Role: </p>
+          <p className="project__text project__text--line">Developer / Designer</p>
+        </div>
+        <div className="project__intro">
+          <p className="project__label">Duration: </p>
+          <p className="project__text project__text--line">In Progress</p>
+        </div>
           <p className="project__text">This project is still under construction, as soon as it is finished, images and a link will be available. In the mean time, you can view the code at the GitHub link below.</p>
           <p className="project__text">This website was built for a client who was entering the Cosmetic Injections field. She came to me with the idea, and gave me the freedom to design and build her website. It is a single page application with different links to find any information needed, including FAQ, contact information, an about section, services, and a way for her clients to book appointments online.</p>
           <p className="project__text">To build this website, I used React and JavaScript for the front-end, as well as SASS for styling. Firebase was used for user signup and authentication, which was necessary for bookings and for users to subscribe to the mailing list.</p>

@@ -45,6 +45,14 @@ export default function Hangman() {
         <img className="project__arrow" src={arrow} alt="" />
       </div>
       <div className="project__bio">
+      <div className="project__intro">
+          <p className="project__label">My Role: </p>
+          <p className="project__text project__text--line">Co-Creator / Developer / Designer</p>
+        </div>
+        <div className="project__intro">
+          <p className="project__label">Duration: </p>
+          <p className="project__text project__text--line">5 hours</p>
+        </div>
         <p className="project__text">Hangman was developed by myself and another classmate for a pair-programming competition in which we came in SECOND PLACE. In just one day, we were tasked with designing and developing anything we wanted. We decided to challenge ourselves, so we created an interactive online version of the classic game, Hangman. When the user clicks the START button, a request goes to our server. The server then generates a random word consisting of at least 8 characters, and responds to the request with it. The word is then displayed as empty boxes, and the user can begin guessing. If the user guesses correctly, any boxes that contain that letter are revealed. If wrong, a part of the body gets hanged.</p>
         <div className="project__images">
           <img onClick={()=>openModal(image1)} className="project__images__1" src={image1} alt="" />
