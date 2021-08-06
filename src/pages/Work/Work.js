@@ -21,8 +21,8 @@ export default function Work() {
         <img className="work__arrow" src={arrow} alt="" />
       </div>
       <div className="grid">
-        <Link to='/work/dylan-galbraith-portfolio' className="grid__project grid__project--long">
-          <img className="grid__project__image" src={dylan} alt="" />
+        <Link to='/work/andrea-parsons-cosmetics' className="grid__project grid__project--long">
+          <img className="grid__project__image" src={andrea} alt="" />
         </Link>
         <Link to='/work/fittrack' className="grid__project">
           <img className="grid__project__image" src={fittrack} alt="" />
@@ -30,8 +30,8 @@ export default function Work() {
         <Link to='/work/connectmd' className="grid__project">
           <img className="grid__project__image" src={connectmd} alt="" />
         </Link>
-        <Link to='/work/andrea-parsons-cosmetics' className="grid__project grid__project--long">
-          <img className="grid__project__image" src={andrea} alt="" />
+        <Link to='/work/dylan-galbraith-portfolio' className="grid__project grid__project--long">
+          <img className="grid__project__image" src={dylan} alt="" />
         </Link>
         <Link to='/work/hangman' className="grid__project">
           <img className="grid__project__image" src={hangman} alt="" />

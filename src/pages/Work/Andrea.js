@@ -22,11 +22,14 @@ export default function Andrea() {
         </div>
         <div className="project__intro">
           <p className="project__label">Duration: </p>
-          <p className="project__text project__text--line">In Progress</p>
+          <p className="project__text project__text--line">2 Months</p>
         </div>
-          <p className="project__text">This project is still under construction, as soon as it is finished, images and a link will be available. In the mean time, you can view the code at the GitHub link below.</p>
-          <p className="project__text">This website was built for a client who was entering the Cosmetic Injections field. She came to me with the idea, and gave me the freedom to design and build her website. I created two different types of accounts for this website, one for clients and an admin one for the owner. This allows the owner to sign in just like the clients, but then has the ability to create, edit, and delete any bookings she would like. I created a completely user friendly interface for her to be able to use the database without having to touch the code. The client accounts get to view these appointments, and book the timeslot they would prefer.</p>
-          <p className="project__text">To build this website, I used React and JavaScript for the front-end, as well as SASS for styling. Firebase was used for user signup and authentication. I then paired the user ids from Firebase to a MySQL database to store more information using Prisma as the ORM. The database is also used to store and maintain all appointments.</p>
+          <p className="project__text">This project was built for a client who was entering the Cosmetic Injections field, and starting her own business. She came to me with a high level idea of what she wanted, and gave me free reign to design and build it however I wanted. After establishing a colour pallete and theme, we then sat down to discuss pages, layout, and functionality.</p>
+          <p className="project__text">The biggest hurdle to overcome in this was building a fully functioning booking system, with two different interfaces, one for the client to view and book appointments, and one for the owner to create, edit, delete, and confirm appointments. The first step I took was building a server and database using Express, Node.js, MySQL, and Prisma. After creating a RESTful API, I then needed to focus on the front-end. I built the front-end through React and Javascript, using SASS for styling and Firebase for user authentication. Using unique user ids, I was able to create two seperate interfaces, one for the clients, and one for the owner.</p>
+          <div className="project__cta">
+            <p className="project__label">Visit: </p>
+            <a className="project__link" href="https://cosmeticnurseange.com/" target="_blank" rel="noopener noreferrer">https://cosmeticnurseange.com/</a>
+          </div>
           <div className="project__cta">
             <p className="project__label">View the code on GitHub: </p>
             <a className="project__link" href="https://github.com/dylan-galbraith/andrea-parsons-cosmetics" target="_blank" rel="noopener noreferrer">https://github.com/dylan-galbraith/andrea-parsons-cosmetics</a>
